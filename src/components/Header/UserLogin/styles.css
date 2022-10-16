@@ -1,0 +1,26 @@
+.userLogin-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 167px;
+    height: 40px;
+    margin-left: 282px;
+    opacity: 1;
+    color: rgba(51, 51, 58, 1);
+    font-family: "ProximaNova-Semibold";
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.userLogin-container img {
+    border-radius: 20px;
+    opacity: 1;
+    background-size: 100%;
+    margin-left: 10px;
+ 
+}

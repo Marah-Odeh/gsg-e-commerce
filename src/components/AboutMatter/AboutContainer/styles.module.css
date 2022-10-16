@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Proxima+Nova");
+.AboutMatter {
+  width: 1139 px;
+  height: 520px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+}
+
+.AboutMatter .LeftCol img,
+.AboutMatter .RightCol {
+  /* width: 555px; */
+  height: 430px;
+}
+
+.AboutMatter .RightCol {
+  margin-left: 29px;
+}
+
+@media (max-width: 767px) {
+  .AboutMatter{
+    width:100%;
+    flex-direction:column;
+    /* margin-bottom: 300px; */
+    height: 1000px;
+  }
+  .LeftCol{
+    width:100%;
+    margin-bottom:20px;
+  }
+  .LeftCol img{
+    width:100%;
+  }
+  .RightCol{
+    width:100%;
+    margin-left: 0px;
+  }
+}

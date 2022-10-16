@@ -1,0 +1,32 @@
+.AddBarContainer {
+  background-color: black;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.AddBarContainer p {
+  opacity: 1;
+  color: rgba(255, 255, 255, 1);
+  font-family: "proxima-nova", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-left: 529px;
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+  .AddBarContainer{
+    width:100%;
+  }
+  .AddBarContainer p {
+    text-align: left;
+    padding-left: 36%;
+  }
+}

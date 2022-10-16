@@ -1,0 +1,18 @@
+#NewBlock {
+    width: 40px;
+    height: 20px;
+    background-color: #ff6008;
+    font-family: "ProximaNova-Regular";
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+   
+  }

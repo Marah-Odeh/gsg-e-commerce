@@ -1,0 +1,45 @@
+.ShopContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1142px;
+}
+.ShopContainer .ProductItems {
+  width: 263px;
+  height: 400px;
+  position: relative;
+}
+
+.ProductItems img {
+  height: 400px;
+}
+
+#Type {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(3, 3, 3, 1);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  line-height: 30px;
+  width: 263px;
+  height: 50px;
+  position: absolute;
+  bottom: 68px;
+}
+@media only screen and (max-width: 767px) {
+  .ShopContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}

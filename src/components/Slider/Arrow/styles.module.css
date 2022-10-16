@@ -1,0 +1,52 @@
+#Left {
+  width: 50px;
+  height: 90px;
+  justify-self: end;
+  right: 0px;
+  bottom: 255px;
+  position: absolute;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  background-color: black;
+  opacity: 40%;
+}
+
+#Right {
+  width: 50px;
+  height: 90px;
+  justify-self: end;
+  left: 0px;
+  bottom: 255px;
+  position: absolute;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: black;
+  opacity: 40%;
+}
+
+
+ #NextArrow {
+    z-index: 1;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(241deg)
+      brightness(107%) contrast(104%);
+    width: 30px;
+    height: 30px;
+    justify-self: end;
+    right: 3px;
+    bottom: 30px;
+    position: absolute;
+  }
+
+
+  #PrevArrow {
+    z-index: 1;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(241deg)
+      brightness(107%) contrast(104%);
+    width: 30px;
+    height: 30px;
+    justify-self: end;
+    left: 0px;
+    bottom: 30px;
+    position: absolute;
+    transform: rotate(180deg);
+  }

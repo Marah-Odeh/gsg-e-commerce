@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Facebook Icon </title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer" transform="translate(-734.000000, -150.000000)" fill="#B2B2B2">
+            <g id="Group-17" transform="translate(538.000000, 90.000000)">
+                <path d="M210.02,72 L208.72,72 L208.72,76.69 L206.78,76.69 L206.78,72 L205.81,72 L205.81,70.38 L206.78,70.38 L206.78,69.41 C206.78,68.1 207.33,67.31 208.88,67.31 L210.18,67.31 L210.18,68.93 L209.37,68.93 C208.76,68.93 208.72,69.15 208.72,69.57 L208.72,70.38 L210.19,70.38 L210.02,72 L210.02,72 Z M208,60 C201.37,60 196,65.37 196,72 C196,78.63 201.37,84 208,84 C214.63,84 220,78.63 220,72 C220,65.37 214.63,60 208,60 L208,60 Z" id="Facebook-Icon-"></path>
+            </g>
+        </g>
+    </g>
+</svg>

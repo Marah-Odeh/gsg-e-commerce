@@ -1,0 +1,83 @@
+.ProductsBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  width: 1141px;
+  justify-content: space-between;
+}
+
+.ProductsBox:hover {
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.ProductItems {
+  display: flex;
+  flex-direction: column;
+  width: 263px;
+  height: 510px;
+  position: relative;
+}
+
+.ProductItems :hover {
+  width: 293px;
+  height: 510px;
+}
+
+#Description {
+  height: 50px;
+  width: 100%;
+  margin-top: 12px;
+  opacity: 1;
+  color: rgba(51, 51, 58, 1);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+#Price {
+  opacity: 1;
+  color: rgba(51, 51, 58, 1);
+  font-family: "proxima-nova", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 30px;
+}
+
+#QuickView {
+  height: 50px;
+  width: 180px;
+  border: #33333a;
+  background-color: #33333a;
+  opacity: 1;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Proxima Nova";
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 185.48px;
+  right: 52px;
+  display: none;
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  .ProductsBox {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}

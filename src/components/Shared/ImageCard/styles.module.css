@@ -1,0 +1,10 @@
+.Image {
+  width: 100%;
+  height: 390px;
+
+}
+
+.Image:hover {
+  opacity: 0.6;
+}
+

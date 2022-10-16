@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  width: 1440px;
+}
+section {
+  padding-left: calc(100% * (150 / 1440));
+  padding-right: calc(100% * (149 / 1440));
+  margin-top: 62px;
+}
+
+.App {
+  width: 100%;
+}
+header {
+  padding-left: calc(100% * (150 / 1440));
+  padding-right: calc(100% * (150 / 1440));
+}
+footer{
+  padding-left: calc(100% * (150 / 1440));
+  padding-right: calc(100% * (150 / 1440));
+
+}
+
+@media (max-width: 767px) {
+  body {
+    width: 100%;
+  }
+  section {
+    width: 100%;
+  }
+  .App {
+    width: 100%;
+  }
+  header{
+    padding-left:2%;
+    padding-right:2%;
+  }
+}

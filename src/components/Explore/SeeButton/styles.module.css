@@ -1,0 +1,17 @@
+#SeeButton {
+  width: 135.33px;
+  height: 40px;
+  opacity: 1;
+  color: rgba(255, 255, 255, 1);
+  font-family: "ProximaNova-Bold";
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-left:50%;
+  margin-top:30px;
+  background-color: #33333A;
+}
