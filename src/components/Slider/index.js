@@ -1,19 +1,44 @@
 import styles from "./styles.module.css";
 import Arrow from "./Arrow";
-
+import { slides } from "./Slides";
+import React, { useState } from "react";
 const Slider = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const slideStyle = {
+    width: "100%",
+    height: "600px",
+    backgroundSize: "cover",
+    backgroundImage: `url(${slides[currentIndex].url})`,
+  };
+  const goToPrevious = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+  const goToNext = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
   return (
     <div className={styles.SliderContainer}>
       <>
-        <img src={"images/sliderImage1.png"} alt="" />
+        <div className={styles.Slides} style={slideStyle}></div>;
         <p id={styles.Title}>
           Perfume Tips <br />
           Tricks
         </p>
         <p id={styles.ShopNow}>Shop Now </p>
-
-        <Arrow AreaDirection="Left" ArrowDirction="NextArrow" />
-        <Arrow AreaDirection="Right" ArrowDirction="PrevArrow" />
+        <Arrow
+          AreaDirection="Left"
+          ArrowDirection="NextArrow"
+          onClick={goToNext}
+        />
+        <Arrow
+          AreaDirection="Right"
+          ArrowDirection="PrevArrow"
+          onClick={goToPrevious}
+        />
       </>
     </div>
   );

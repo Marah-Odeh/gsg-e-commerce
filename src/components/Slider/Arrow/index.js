@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./styles.module.css";
-const Arrow = ({ AreaDirection, ArrowDirction }) => {
+const Arrow = ({ AreaDirection, ArrowDirection, onClick }) => {
   return (
     <div id={styles[AreaDirection]}>
-      <a href="#" >
+      <a href="#" onClick={onClick}>
         {" "}
-        <img id={styles[ArrowDirction]} src={"icons/right-arrow.svg"} alt="" />
+        <img id={styles[ArrowDirection]} src={"icons/right-arrow.svg"} alt="" />
       </a>
     </div>
   );
