@@ -1,0 +1,27 @@
+.CounterItems {
+  display: flex;
+  flex-direction: raw;
+  justify-content: space-between;
+  height: 38px;
+  width: 114px;
+  border: 1px solid rgba(222, 222, 222, 1);
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.IncCounter,
+.DecCounter,
+.QuantityValue {
+  width: calc(100% / 3);
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+.IncCounter,
+.DecCounter{
+  cursor: pointer;
+}
+.QuantityValue {
+  padding-top: 5px;
+}

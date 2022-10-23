@@ -11,7 +11,11 @@ const ShopContainer = () => {
         return (
           <div key={index} className={styles.ProductItems}>
             <>
-              <ImageCard ProductImage={image} />
+              <ImageCard
+                ProductImage={image}
+                ImageIndex={index}
+                BottonText="SHOP NOW"
+              />
               <p id={styles.Type}>{type}</p>
             </>
           </div>

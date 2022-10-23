@@ -1,4 +1,4 @@
-import styles from"./App.module.css";
+import styles from "./App.module.css";
 import React from "react";
 import AddsBar from "./components/AddsBar";
 import Header from "./components/Header";
@@ -40,7 +40,6 @@ const App = () => {
         <MatterInterface title="As Seen On">
           <AsSeenContainer />
         </MatterInterface>
-
         <Footer />
       </>
     </div>

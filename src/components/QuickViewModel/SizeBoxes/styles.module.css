@@ -1,0 +1,58 @@
+.SizeBoxesContainer {
+  display: flex;
+  flex-direction: column;
+  width: 556px;
+  margin-bottom: 9px;
+  padding-right: 25px;
+}
+.SizeBoxesTitle {
+  opacity: 1;
+  color: #33333a;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.Container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.SizeBoxes {
+  width: 230px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.SizeBox {
+  width: calc(100% / 4);
+  height: 100%;
+  border: 1px solid #f3f3f3;
+  opacity: 1;
+  background-color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* .SizeBox:checked {
+  border: 1px solid #f3f3f3;
+  opacity: 1;
+  background-color: #dedede;
+} */
+.SizeClarification {
+  opacity: 1;
+  color: rgba(102, 102, 102, 1);
+  font-family: "proxima-nova", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 25px;
+}

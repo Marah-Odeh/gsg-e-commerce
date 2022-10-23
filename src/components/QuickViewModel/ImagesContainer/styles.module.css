@@ -1,0 +1,6 @@
+.ProductImages {
+  display: flex;
+  margin-top: 24px;
+  flex-direction: row;
+}
+

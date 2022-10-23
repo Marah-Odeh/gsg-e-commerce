@@ -1,0 +1,36 @@
+.Table {
+  display: flex;
+  width: 100%;
+}
+
+.LeftCol,
+.RightCol {
+  width: 50%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.RightItem {
+  height: 50px;
+  box-shadow: 0px -2px 0px rgba(249, 248, 246, 1);
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  color: rgba(0, 0, 0, 1);
+  font-family: "ProximaNova-Light";
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 30px;
+}
+.LeftItem {
+  box-shadow: 0px -2px 0px rgba(249, 248, 246, 1);
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 1);
+
+  height: 50px;
+}
