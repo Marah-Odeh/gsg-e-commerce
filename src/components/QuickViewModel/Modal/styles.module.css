@@ -67,3 +67,17 @@
   padding-left: 25px;
   padding-right: 25px;
 }
+
+@media (max-width: 767px) {
+  .ModalBody {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .ImagesBox,
+  .DetailsBox {
+    width: 100%;
+    height: fit-content;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}

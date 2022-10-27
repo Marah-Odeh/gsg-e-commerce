@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./styles.module.css";
-const FirstParaghraph = () => {
+const FirstParagraph = () => {
   return (
-    <div className={styles.FirstParaghraph}>
+    <div className={styles.FirstParagraph}>
       Our mission is threefold - to foster designer-artisan collaborations,
       inspire consumers to value provenance and process, and pioneer industry
       change and sustainability for rural textile communities.
@@ -10,4 +10,4 @@ const FirstParaghraph = () => {
   );
 };
 
-export default FirstParaghraph;
+export default FirstParagraph;

@@ -20,11 +20,6 @@
   position: relative;
 }
 
-/* .ProductItems :hover {
-  width: 293px;
-  height: 510px;
-} */
-
 #Description {
   height: 50px;
   width: 100%;
@@ -57,7 +52,17 @@
   .ProductsBox {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
+  }
+  .ProductItems {
+    height: fit-content;
+    margin-bottom: 12px;
+  }
+  #Description {
+    height: fit-content;
+  }
+  .ProductItems:hover {
+    height: fit-content;
   }
 }

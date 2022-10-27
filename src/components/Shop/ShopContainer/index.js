@@ -12,9 +12,9 @@ const ShopContainer = () => {
           <div key={index} className={styles.ProductItems}>
             <>
               <ImageCard
-                ProductImage={image}
+                thumbnail={image}
                 ImageIndex={index}
-                BottonText="SHOP NOW"
+                ButtonText="SHOP NOW"
               />
               <p id={styles.Type}>{type}</p>
             </>

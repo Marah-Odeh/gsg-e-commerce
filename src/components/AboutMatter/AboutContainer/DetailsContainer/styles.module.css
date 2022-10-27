@@ -19,11 +19,11 @@
   line-height: 40px;
   text-transform: uppercase;
 }
-.MatterDetailes {
+.MatterDetails {
   list-style: none;
 }
 
-.DetailesItem {
+.DetailsItem {
   margin-bottom: -17px;
   opacity: 1;
   color: rgba(51, 51, 58, 1);
@@ -37,7 +37,7 @@
 }
 
 @media (max-width: 767px) {
-  .MatterRigh {
+  .MatterRight {
     margin-bottom: 20px;
   }
   .MatterSubtitle {
@@ -45,7 +45,7 @@
     height: auto;
     width: 80%;
   }
-  .DetailesItem {
+  .DetailsItem {
     width: auto;
     height: auto;
     margin-bottom:20px; 

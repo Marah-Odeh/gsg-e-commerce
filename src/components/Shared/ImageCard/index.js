@@ -1,9 +1,22 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Modal from "../../QuickViewModel/Modal";
-import { products } from "../ProductDetailes";
+// import { products } from "../ProductDetails";
 
-const ImageCard = ({ ProductImage, ImageIndex, BottonText }) => {
+const ImageCard = ({
+  thumbnail: ProductImage,
+  ImageIndex,
+  ButtonText,
+  title,
+  description,
+  price,
+  rating,
+  images,
+  stock,
+  brand,
+  category,
+ 
+}) => {
   const [isHovering, SetIsHovering] = useState(-1);
   const [openModal, setOpenModal] = useState(false);
   return (
@@ -26,25 +39,32 @@ const ImageCard = ({ ProductImage, ImageIndex, BottonText }) => {
       <button
         id={`${isHovering === ImageIndex ? "" : `${styles.hidden}`}`}
         className={
-          BottonText === "Quick View" ? styles.QuickView : styles.ShopNow
+          ButtonText === "Quick View" ? styles.QuickView : styles.ShopNow
         }
         onClick={
-          BottonText === "Quick View"
+          ButtonText === "Quick View"
             ? () => {
                 setOpenModal(true);
               }
             : null
         }
       >
-        {BottonText}{" "}
+        {ButtonText}{" "}
       </button>
-      {products.map((item, index) => {
-        // const { title, description, price } = item;
-        return (
-          index === ImageIndex &&
-          openModal && <Modal {...item}  closeModel={setOpenModal}  />
-        );
-      })}
+      {openModal && (
+        <Modal
+          title={title}
+          description={description}
+          price={price}
+          rating={rating}
+          images={images}
+          stock={stock}
+          brand={brand}
+          category={category}
+          closeModel={setOpenModal}
+          SetIsHovering={SetIsHovering}
+        />
+      )}
     </div>
   );
 };

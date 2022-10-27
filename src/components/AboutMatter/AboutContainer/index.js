@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
-import FirstParaghraph from "./Firstparagraph";
-import DetailesContainer from "./DetailesContainer";
+import FirstParagraph from "./FirstParagraph";
+import DetailsContainer from "./DetailsContainer";
 
 const AboutContainer = () => {
   return (
@@ -9,8 +9,8 @@ const AboutContainer = () => {
         <img src={"images/aboutMatter.png"} alt="" />
       </div>
       <div className={styles.RightCol}>
-        <FirstParaghraph />
-        <DetailesContainer />
+        <FirstParagraph />
+        <DetailsContainer />
       </div>
     </div>
   );

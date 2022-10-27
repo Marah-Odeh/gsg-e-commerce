@@ -1,4 +1,4 @@
-.FirstParaghraph {
+.FirstParagraph {
   opacity: 1;
   color: rgba(3, 3, 3, 1);
   font-family: "proxima-nova", sans-serif;
@@ -13,7 +13,7 @@
 }
 
 @media (max-width: 767px){
-  .FirstParaghraph {
+  .FirstParagraph {
     height: auto;
   }
 }

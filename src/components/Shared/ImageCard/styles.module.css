@@ -1,7 +1,7 @@
 .Image {
   z-index: -1;
   width: 263px;
-  height: 390px;
+  height: 350px;
   align-self: center;
   justify-self: center;
 }
@@ -62,4 +62,13 @@
 
 #hidden {
   display: none;
+}
+
+@media (max-width: 767px){
+  .ImageCardContainer {
+    height: 305px;
+  }
+  .Image {
+    height: 305px;
+  }
 }

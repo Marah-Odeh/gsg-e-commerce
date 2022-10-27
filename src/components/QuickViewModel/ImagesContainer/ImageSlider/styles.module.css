@@ -7,3 +7,10 @@
       width:100%;
       height: 100%;
   }
+
+  @media (max-width: 767px){
+    .ImagesSlide {
+        width: 70%;
+        height: 60vh;
+    }
+  }

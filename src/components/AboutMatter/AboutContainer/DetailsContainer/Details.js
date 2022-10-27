@@ -1,14 +1,14 @@
 export const MatterList = [
   {
     title: "Artisan Employment Days Created",
-    detailes: ["123456"],
+    details: ["123456"],
   },
   {
     title: "Countries Involved To Date",
-    detailes: ["India" ,"China"," Sri Lanka"],
+    details: ["India" ,"China"," Sri Lanka"],
   },
   {
     title: "#MatterTribe ",
-    detailes: ["12 designers", "12 Factories"],
+    details: ["12 designers", "12 Factories"],
   },
 ];

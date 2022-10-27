@@ -1,20 +1,20 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-const InformationTable = () => {
-  const titles = ["Artisan Employment", "Partnership", "In Collab"];
-  const values = ["54 jobs", "Randall Armstrong", "Augusta Mendoza"];
+const InformationTable = ({stock,brand,category}) => {
+  const titles = ["Stock", "Brand", "Category"];
+  const values = [stock,brand,category];
   return (
     <div className={styles.Table}>
       <div className={styles.LeftCol}>
-        {titles.map((item, index) => {
-          return <div className={styles.RightItem}> {item}</div>;
+        {titles.map((title, index) => {
+          return <div key={index} className={styles.RightItem}> {title}</div>;
         })}
       </div>
 
       <div className={styles.RightCol}>
-        {values.map((item, index) => {
-          return <div className={styles.LeftItem}> {item}</div>;
+        {values.map((value, index) => {
+          return <div  key={index} className={styles.LeftItem}> {value}</div>;
         })}
       </div>
     </div>

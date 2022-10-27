@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
+import { AiOutlinePlus,AiOutlineMinus } from "react-icons/ai";
+
 const QuantityCounter = () => {
   const initialCounterValue = 0;
   const [counter, setCount] = useState(initialCounterValue);
@@ -13,7 +15,7 @@ const QuantityCounter = () => {
           }}
           className={styles.IncCounter}
         >
-          +
+         <AiOutlinePlus/>
         </button>
         <p className={styles.QuantityValue}>{counter}</p>
         <button
@@ -22,7 +24,7 @@ const QuantityCounter = () => {
           }}
           className={styles.DecCounter}
         >
-          -
+         <AiOutlineMinus/>
         </button>
       </div>
  
