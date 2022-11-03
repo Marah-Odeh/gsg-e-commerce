@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import FirstParagraph from "./FirstParagraph";
+import FirstParagraph from "./Firstparagraph";
 import DetailsContainer from "./DetailsContainer";
 
 const AboutContainer = () => {
