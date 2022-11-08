@@ -8,8 +8,38 @@
   .BurgerMenuIcon {
     position: absolute;
     left: 10%;
-    top:40%;
+    top: 40%;
     width: 25px;
     color: black;
   }
+  .BurgerMenu {
+    position: relative;
+    width: 150px;
+    margin-bottom:3%
+  }
+  .BurgerMenuList {
+    width: 100%;
+    background-color: white;
+    list-style: none;
+    position: absolute;
+    top: 46px;
+    right: 0px;
+    box-shadow: 0px 10px 40px rgba(0, 1, 1, 0);
+    border-radius: 0 0 5px 5px;
+  }
+  .MenuItem {
+    opacity: 1;
+    color: rgba(51, 51, 58, 1);
+    font-family: "ProximaNova-Semibold";
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-left:10px;
+   
+  }
+
 }
