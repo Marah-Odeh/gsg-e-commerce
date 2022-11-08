@@ -1,16 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Proxima+Nova");
 .AboutMatter {
-  width: 1139 px;
-  height: 520px;
+  width: 100%;
+  height: 430px;
   display: flex;
   flex-direction: row;
   margin-top: 24px;
+  justify-content: space-between;
 }
 
-.AboutMatter .LeftCol img,
+.AboutMatter .LeftCol{
+  width:48.7%;
+}
 .AboutMatter .RightCol {
-  /* width: 555px; */
-  height: 430px;
+  width:51.3%;
+  justify-content: space-between;
+
+
+}
+.AboutMatter .LeftCol img{
+  width:100%;
+  height: 100%;
+}
+.AboutMatter .LeftCol,
+.AboutMatter .RightCol {
+  height: 100%;
 }
 
 .AboutMatter .RightCol {
@@ -21,13 +34,13 @@
   .AboutMatter {
     width: 100%;
     flex-direction: column;
-    /* margin-bottom: 300px; */
     height: 1000px;
   }
-  .LeftCol {
+  .AboutMatter .LeftCol{
     width: 100%;
     margin-bottom: 20px;
   }
+
   .LeftCol img {
     width: 100%;
   }

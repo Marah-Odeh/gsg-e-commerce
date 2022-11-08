@@ -2,20 +2,20 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 28px;
-  width: 1141px;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .ProductItems:hover {
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
-  width: 293px;
+  width:253px;
   height: 510px;
 }
 
 .ProductItems {
   display: flex;
   flex-direction: column;
-  width: 263px;
+  width: 233px;
   height: 510px;
   position: relative;
 }

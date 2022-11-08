@@ -7,16 +7,17 @@
 
 .RightBox {
   display: grid;
-  grid-template-columns: 263px 263px;
-  grid-template-rows: 50% 50%;
-  column-gap: 30px;
-  grid-area: "box2 box4" "box3 box5";
+  grid-template-columns: 47.3% 47.3%;
+  grid-template-rows:50% 50%;
+  column-gap: 5.4%;
   height: 560px;
-  width: 556px;
+  width: 61.6%;
+  margin-left: 30px;
+
 }
 
 .Box1 {
-  width: 555px;
+  width:38.5%;
   height: 560px;
   border-top: solid;
 }
@@ -28,6 +29,7 @@
 .SubTitle {
   width: 100%;
   height: 40px;
+  overflow: hidden;
   margin-top: 10px;
   opacity: 1;
   color: rgba(51, 51, 58, 1);
@@ -46,6 +48,7 @@
   margin-bottom: 18px;
   width: 100%;
   height: 70px;
+  overflow: hidden;
   opacity: 1;
   color: rgba(51, 51, 58, 1);
   font-family: "Roboto", sans-serif;
@@ -66,6 +69,11 @@
   margin-top: 1px;
 }
 
+.Box2 .Paragraph{
+  max-height: 125px;
+  overflow: hidden;
+}
+
 .Box1 .Paragraph {
   width: 100%;
   height: 100px;
@@ -79,6 +87,7 @@
   text-align: left;
   line-height: 25px;
   margin-top: 10px;
+  overflow: hidden;
 }
 
 .Box1 .Image {
@@ -88,11 +97,8 @@
 }
 
 .Box2 {
-  width: 263px;
   height: 280px;
-  margin-left: 30px;
   border-top: solid;
-  grid-area: box2, box3, box4, box5;
 }
 
 .Box2 .Image {
@@ -116,11 +122,17 @@
     width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
-
+    margin-left: 30px;
   }
 
   .Box2 {
     width: 100%;
     margin-left: 8px;
+  }
+
+  .Box2 .Image {
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

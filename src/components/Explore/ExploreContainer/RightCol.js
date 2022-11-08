@@ -9,17 +9,15 @@ const RightCol = () => {
         const { subTitle, title, paragraph, image } = item;
         const length = `${paragraph.length}`;
 
-        return length == 0 ? (
+        return (
           <div className={styles.Box2}>
             <div className={styles.SubTitle}>{subTitle}</div>
             <div className={styles.Title}>{title}</div>
-            <img className={styles.Image} src={image} />
-          </div>
-        ) : (
-          <div className={styles.Box2}>
-            <div className={styles.SubTitle}>{subTitle}</div>
-            <div className={styles.Title}>{title}</div>
-            <div className={styles.Paragraph}>{paragraph}</div>
+            {length == 0 ? (
+              <img className={styles.Image} src={image} />
+            ) : (
+              <div className={styles.Paragraph}>{paragraph}</div>
+            )}
           </div>
         );
       })}

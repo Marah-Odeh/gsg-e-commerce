@@ -14,7 +14,7 @@
 .SliderContainer #Title {
   z-index: 1;
   opacity: 1;
-  width: 458px;
+  width: calc(100% * (458/1440));
   height: 160px;
   color: #ffffff;
   font-family: "HelveticaLTThai-Regular";

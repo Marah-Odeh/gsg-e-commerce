@@ -6,13 +6,13 @@ const SubcribeContainer = () => {
     <div className={styles.SubscribeCont}>
       <h4>Subscribe to newsletter</h4>
       <form className={styles.Form}>
-        <label>
+        <label className={styles.EmailLabel}>
           <input
             className={styles.EmailInput}
             type="email"
             placeholder="Enter your email address"
           />
-        </label>
+        </label >
         <input
           className={styles.SubscribeInput}
           type="submit"

@@ -1,15 +1,14 @@
-.AsSeenContainer img{
-    margin-bottom: 60px;
-    width: 964px;
-    height: 43px;
-   margin-left:88px;
-   margin-right:238px;
+.AsSeenContainer img {
+  margin-bottom: 60px;
+  width: 100%;
+  height: 43px;
+  /* margin-right: 238px; */
 }
 
-@media only screen and (max-width: 767px){
-    .AsSeenContainer img{
-        width: 100%;
-        margin-left:0px;
-        margin-right:0px;
-    }
+@media only screen and (max-width: 767px) {
+  .AsSeenContainer img {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }

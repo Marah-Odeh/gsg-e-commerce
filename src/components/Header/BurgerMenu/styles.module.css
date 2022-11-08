@@ -1,0 +1,15 @@
+.BurgerMenu {
+  display: none;
+}
+@media (max-width: 767px) {
+  .BurgerMenu {
+    display: block;
+  }
+  .BurgerMenuIcon {
+    position: absolute;
+    left: 10%;
+    top:40%;
+    width: 25px;
+    color: black;
+  }
+}

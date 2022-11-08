@@ -18,7 +18,7 @@ export const data = {
         "https://dummyjson.com/image/i/products/1/4.jpg",
         "https://dummyjson.com/image/i/products/1/thumbnail.jpg",
       ],
-      NewBox: "Y",
+      NewBox: true,
     },
     {
       id: 2,
@@ -38,7 +38,7 @@ export const data = {
         "https://dummyjson.com/image/i/products/2/3.jpg",
         "https://dummyjson.com/image/i/products/2/thumbnail.jpg",
       ],
-      NewBox: "Y",
+      NewBox: true,
     },
     {
       id: 3,
@@ -53,7 +53,7 @@ export const data = {
       category: "smartphones",
       thumbnail: "https://dummyjson.com/image/i/products/3/thumbnail.jpg",
       images: ["https://dummyjson.com/image/i/products/3/1.jpg"],
-      NewBox: "Y",
+      NewBox: true,
     },
     {
       id: 4,
@@ -73,7 +73,7 @@ export const data = {
         "https://dummyjson.com/image/i/products/4/4.jpg",
         "https://dummyjson.com/image/i/products/4/thumbnail.jpg",
       ],
-      NewBox: "N",
+      NewBox: false,
     },
     {
       id: 5,
@@ -92,7 +92,7 @@ export const data = {
         "https://dummyjson.com/image/i/products/5/2.jpg",
         "https://dummyjson.com/image/i/products/5/3.jpg",
       ],
-      NewBox: "Y",
+      NewBox: true,
     },
     {
       id: 6,
@@ -112,7 +112,7 @@ export const data = {
         "https://dummyjson.com/image/i/products/6/3.png",
         "https://dummyjson.com/image/i/products/6/4.jpg",
       ],
-      NewBox: "N",
+      NewBox: false,
     },
     {
       id: 7,
@@ -132,7 +132,7 @@ export const data = {
         "https://dummyjson.com/image/i/products/7/3.jpg",
         "https://dummyjson.com/image/i/products/7/thumbnail.jpg",
       ],
-      NewBox: "Y",
+      NewBox: true,
     },
     {
       id: 8,
@@ -153,7 +153,7 @@ export const data = {
         "https://dummyjson.com/image/i/products/8/4.jpg",
         "https://dummyjson.com/image/i/products/8/thumbnail.jpg",
       ],
-      NewBox: "N",
+      NewBox: false,
     },
   ],
   total: 100,

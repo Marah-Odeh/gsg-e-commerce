@@ -5,10 +5,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1142px;
+  width: 100%;
 }
 .ShopContainer .ProductItems {
-  width: 263px;
+  width: 233px;
   height: 400px;
   position: relative;
 }

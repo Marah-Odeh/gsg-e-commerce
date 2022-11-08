@@ -1,4 +1,5 @@
 .HeaderContainer {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -11,6 +12,8 @@
 }
 
 .Logo {
+  position: absolute;
+  left: calc(100% * (150 / 1440));
   opacity: 1;
   color: #030303;
   font-family: "MarkPro";
@@ -22,9 +25,13 @@
   cursor: pointer;
 }
 
-@media (max-width: 767px){
-  .Logo{
-    font-size: 30px;
-
+@media (max-width: 767px) {
+  .HeaderContainer {
+    position: relative;
+  }
+  .Logo {
+    position: absolute;
+    left: 40%;
+    right: 40%;
   }
 }

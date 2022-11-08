@@ -1,28 +1,28 @@
-.ShowMore{
-    opacity: 1;
-    background-color: rgba(51, 51, 58, 1);
-    opacity: 1;
-    color: rgba(255, 255, 255, 1);
-    font-family: "proxima-nova", sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: 2px;
-    text-align: center;
-    line-height: 20px;
-    text-transform: uppercase;
-    width: 130px;
-    height: 40px;
-    position: absolute;
-    bottom: 0px;
-    right:649px;
-    border: none;
-    cursor: pointer;
+.ShowMore {
+  opacity: 1;
+  background-color: rgba(51, 51, 58, 1);
+  opacity: 1;
+  color: rgba(255, 255, 255, 1);
+  font-family: "proxima-nova", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 130px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: calc(100% * (511 / 1141));
 }
 
 @media only screen and (max-width: 767px) {
-    .ShowMore {
-        bottom: 0px;
-        right:45.1%;
-    }
+  .ShowMore {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

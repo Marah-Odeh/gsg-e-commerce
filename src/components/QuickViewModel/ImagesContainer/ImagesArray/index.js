@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 import ImageSlider from "../ImageSlider";
 const ImagesArray = ({ images }) => {
   const [isHovering, SetIsHovering] = useState(0);
+
   return (
     <div className={styles.ProductImages}>
       <div className={styles.ImagesArray}>

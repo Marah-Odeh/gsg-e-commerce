@@ -1,6 +1,6 @@
 .Image {
   z-index: -1;
-  width: 263px;
+  width: 100%;
   height: 350px;
   align-self: center;
   justify-self: center;
@@ -12,14 +12,14 @@
 .ImageCardContainer {
   z-index: -1;
   position: relative;
-  width: 263px;
+  width: 100%;
   height: 390px;
 }
 
 .QuickView {
   z-index: 500;
   height: 50px;
-  width: 180px;
+  width: 65%;
   border: #33333a;
   background-color: #33333a;
   opacity: 1;
@@ -34,7 +34,7 @@
   text-transform: uppercase;
   position: absolute;
   top: 185.48px;
-  right: 76.5px;
+  right: 50.5px;
   cursor: pointer;
 }
 

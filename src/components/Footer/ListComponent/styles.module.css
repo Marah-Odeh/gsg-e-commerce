@@ -1,139 +1,141 @@
-.FooterListComponent{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top:41px;
-    width:536px;
+.FooterListComponent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 41px;
+  width: 49.6%;
 }
 .List {
-    list-style: none;
-    opacity: 1;
-    color: rgba(222, 222, 222, 1);
-    font-family: "proxima-nova", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0px;
-    text-align: left;
-    line-height: 25px;
-  }
-  
-  .ListItem a {
-    text-decoration: none;
-    color: white;
-  }
+  list-style: none;
+  opacity: 1;
+  color: rgba(222, 222, 222, 1);
+  font-family: "proxima-nova", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 25px;
+}
 
-  .Column h4 {
-    opacity: 1;
-    color: rgba(255, 255, 255, 1);
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0px;
-    text-align: left;
-    line-height: 30px;
-    margin-bottom: 19px;
-  }
+.ListItem a {
+  text-decoration: none;
+  color: white;
+}
 
-  .SubscribeCont{
+.Column h4 {
+  opacity: 1;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 30px;
+  margin-bottom: 19px;
+}
 
-    margin-left:49px;
-  }
+.SubscribeCont {
+  margin-left: 49px;
+  width: 50.6%;
+}
 
-  .SubscribeCont h4{
-    margin-top:41px;
-    opacity: 1;
-    color: rgba(255, 255, 255, 1);
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0px;
-    text-align: left;
-    line-height: 30px;
-    /* margin-bottom: 19px; */
-  }
+.SubscribeCont h4 {
+  margin-top: 41px;
+  opacity: 1;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 30px;
+  /* margin-bottom: 19px; */
+}
 
+.Form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 19px;
+  width: 100%;
+}
+.Form .EmailInput {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(102, 102, 102, 1);
+  opacity: 1;
+  background-color: rgba(51, 51, 58, 1);
+  opacity: 1;
+  color: rgba(222, 222, 222, 1);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.EmailLabel {
+  width: 64.7%;
+}
+.Form .SubscribeInput {
+  width: 29.9%;
+  height: 40px;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  color: rgba(51, 51, 58, 1);
+  font-family: "ProximaNova-Semibold";
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-left: 30px;
+  border: none;
+}
 
-  .Form{
-    display: flex;
-    flex-direction: row;
-    margin-top:19px;
-  }
-  .Form .EmailInput {
-   
-    width: 360px;
-    height: 40px;
-    border: 1px solid rgba(102, 102, 102, 1);
-    opacity: 1;
-    background-color: rgba(51, 51, 58, 1);
-    opacity: 1;
-    color: rgba(222, 222, 222, 1);
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
-    text-align: left;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
-  .Form .SubscribeInput {
-    width: 166px;
-    height: 40px;
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 1);
-    opacity: 1;
-    color: rgba(51, 51, 58, 1);
-    font-family: "ProximaNova-Semibold";
-    font-size: 12px;
-    font-weight: 600;
-    font-style: normal;
-    letter-spacing: 2px;
-    text-align: center;
-    line-height: 20px;
-    text-transform: uppercase;
-    margin-left: 30px;
-    border: none;
-  }
-  
-  ::placeholder {
-    padding-left: 10px;
-  }
-  .FooterIcons {
-    padding-top: 20px;
-  }
+::placeholder {
+  padding-left: 10px;
+}
+.FooterIcons {
+  padding-top: 20px;
+}
 
-  .FacbookIcon {
-    padding-right: 10px;
-  }
+.FacbookIcon {
+  padding-right: 10px;
+}
 
-  @media only screen and (max-width: 767px){
-    .FooterListComponent{
+@media only screen and (max-width: 767px) {
+  .FooterListComponent {
     flex-direction: column;
-  
-    }
-    .SubscribeCont{
-        display: flex;
-        flex-direction: column;
-        margin-left:0px;
-        align-items: center;
-    }
+  }
+  .SubscribeCont {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    align-items: center;
+  }
 
-    .Form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  .Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    }
-
-     .EmailInput {
-        width:40%;
-        margin-bottom: 10%;
-        margin-right: 0px;
+  .EmailInput {
+    margin-bottom: 10%;
+    margin-right: 0px;
   }
   .SubscribeInput {
-    width:40%;
     margin-left: 0px;
+    font-size: 12px;
+  }
+  ::placeholder {
+    font-size: 10px;
   }
 }

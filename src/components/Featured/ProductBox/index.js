@@ -10,22 +10,15 @@ const ProductBox = () => {
     <div className={styles.ProductsBox}>
       {products.map((item, index) => {
         const { title, price, NewBox } = item;
-        const NewBlock = `${NewBox}`;
-        return NewBlock === "Y" ? (
+
+        return (
           <div key={index} className={styles.ProductItems}>
             <>
-              <NewProduct />
+              {NewBox ? <NewProduct /> : <></>}
+
               <ImageCard {...item} ImageIndex={index} ButtonText="Quick View" />
               <p id={styles.Description}>{title}</p>
               <p id={styles.Price}>${price}</p>
-            </>
-          </div>
-        ) : (
-          <div key={index} className={styles.ProductItems}>
-            <>
-              <ImageCard {...item} ImageIndex={index} ButtonText="Quick View" />
-              <p id={styles.Description}>{title}</p>
-              <p id={styles.Price}>{price}</p>
             </>
           </div>
         );

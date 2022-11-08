@@ -4,8 +4,10 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-body {
-  width: 1440px;
+.App {
+  box-shadow: 0px 10px 40px rgba(0,0,0, 0.1);
+  max-width: 1440px;
+  margin: auto;
 }
 section {
   padding-left: calc(100% * (150 / 1440));
@@ -20,10 +22,9 @@ header {
   padding-left: calc(100% * (150 / 1440));
   padding-right: calc(100% * (150 / 1440));
 }
-footer{
+footer {
   padding-left: calc(100% * (150 / 1440));
   padding-right: calc(100% * (150 / 1440));
-
 }
 
 @media (max-width: 767px) {
@@ -36,8 +37,8 @@ footer{
   .App {
     width: 100%;
   }
-  header{
-    padding-left:2%;
-    padding-right:2%;
+  header {
+    padding-left: 2%;
+    padding-right: 2%;
   }
 }

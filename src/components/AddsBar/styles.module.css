@@ -4,9 +4,11 @@
   width: 100%;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .AddBarContainer p {
+  position: absolute;
   opacity: 1;
   color: rgba(255, 255, 255, 1);
   font-family: "proxima-nova", sans-serif;
@@ -15,15 +17,14 @@
   font-style: normal;
   letter-spacing: 0px;
   text-align: left;
-  padding-left: 529px;
+  right: calc(100% * (529 / 1440));
 }
 
 /* Mobile */
 
 @media (max-width: 767px) {
-
-  .AddBarContainer{
-    width:100%;
+  .AddBarContainer {
+    width: 100%;
   }
   .AddBarContainer p {
     text-align: left;

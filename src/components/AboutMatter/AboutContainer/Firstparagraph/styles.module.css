@@ -10,6 +10,8 @@
   line-height: 30px;
   margin-top: 0px;
   height: 90px;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 767px){

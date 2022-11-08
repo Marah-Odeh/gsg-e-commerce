@@ -1,16 +1,17 @@
 .VideosContainer {
-  width: 1141px;
-  height: 240px;
+  width: 100%;
+  height: fit-content;
   display: flex;
   justify-content: space-between;
    margin-top: 24px;
+   flex-wrap: wrap;
 }
 
 .VideosContainer .VideoItems {
   display: flex;
   flex-direction: column;
-  width: 361px;
-  height: 310px;
+  width: 320.88px;
+  height: fit-content;
   position: relative;
 }
 
