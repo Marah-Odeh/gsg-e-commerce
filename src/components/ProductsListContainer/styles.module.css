@@ -1,0 +1,5 @@
+.ProductsListContainer{
+    display: flex;
+    margin-left: calc(100% * (153 / 1440));
+    margin-right:calc(100% * (149 / 1440)); ;
+}

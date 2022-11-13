@@ -3,9 +3,9 @@ import { productsList } from "./Product";
 import ImageCard from "../../Shared/ImageCard";
 import NewProduct from "./NewProduct";
 import React from "react";
-import { data } from "../../Shared/ProductDetails";
-const ProductBox = () => {
-  const { products } = data;
+// import { data } from "../../Shared/ProductDetails";
+const ProductBox = ({products}) => {
+  // const { products } = data;
   return (
     <div className={styles.ProductsBox}>
       {products.map((item, index) => {
