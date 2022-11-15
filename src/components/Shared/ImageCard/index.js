@@ -21,7 +21,7 @@ const ImageCard = ({
   const [openModal, setOpenModal] = useState(false);
   return (
     <div
-      className="ImageCardContainer"
+      className={styles.ImageCardContainer}
       onMouseEnter={() => {
         SetIsHovering(ImageIndex);
       }}

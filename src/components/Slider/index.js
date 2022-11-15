@@ -10,12 +10,14 @@ const Slider = () => {
     backgroundSize: "cover",
     backgroundImage: `url(${slides[currentIndex].url})`,
   };
-  const goToPrevious = () => {
+  const goToPrevious = (event) => {
+    event.preventDefault();
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
-  const goToNext = () => {
+  const goToNext = (event) => {
+    event.preventDefault();
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);

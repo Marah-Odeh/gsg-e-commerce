@@ -5,7 +5,7 @@ const ImageSlider = ({SrcIndex,images}) => {
     <div className={styles.ImagesSlide}>
          <img
           className={styles.ImagesSlideImg}
-          src={images[SrcIndex]}
+          src={images[SrcIndex]} alt="image slider"
         /> 
       </div>
   )

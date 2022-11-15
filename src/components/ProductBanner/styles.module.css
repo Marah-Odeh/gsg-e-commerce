@@ -1,0 +1,52 @@
+.ProductBanner {
+  height: 600px;
+  width: 100%;
+  opacity: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  background-color: rgba(243, 243, 243, 1);
+  border-color: rgb(156, 73, 24);
+}
+.BannerImage {
+  width: 30%;
+  height: 500px;
+  position: absolute;
+  box-shadow: 5px 5px 5px 5px rgb(241, 199, 176);
+  border-radius: 3mm;
+  right: calc(100% * (135 / 1440));
+}
+.BannerTitle {
+  position: absolute;
+  right: calc(100% * (638.5 / 1440));
+  margin-right: calc(100% * (103.5 / 1440));
+  top: 200px;
+  opacity: 1;
+  color: rgba(51, 51, 58, 1);
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: center;
+  line-height: 90px;
+  text-transform: capitalize;
+  text-shadow: 2px 2px rgb(241, 199, 176);
+  height: fit-content;
+}
+
+.BannerDescription {
+  opacity: 1;
+  color: rgba(3, 3, 3, 1);
+  font-family: "ProximaNova-Light";
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 40px;
+  position: absolute;
+  right: calc(100% * (685 / 1440));
+  margin-top:160px;
+}

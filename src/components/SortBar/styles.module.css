@@ -47,3 +47,20 @@
   line-height: 40px;
   width: 75px;
 }
+.CategoryTitle {
+  opacity: 1;
+  color: rgba(3, 3, 3, 1);
+  font-family: "ProximaNova-Light";
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 40px;
+  position: absolute;
+  left: calc(100% * (150/1440));
+  top:10px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}

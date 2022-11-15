@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
-
-const SortBar = ({ OnSortSelected }) => {
+import { IoIosArrowForward } from "react-icons/io";
+const SortBar = ({ OnSortSelected, filteredValue }) => {
   const options = [
     {
       label: "Title",
@@ -12,12 +12,14 @@ const SortBar = ({ OnSortSelected }) => {
       value: "price",
     },
   ];
-  const handleSort = (e) => { 
+  const handleSort = (e) => {
     console.log(e.target.value);
     OnSortSelected(e.target.value);
   };
   return (
     <div className={styles.SortBar}>
+      <div className={styles.CategoryTitle}>Category <IoIosArrowForward/> {filteredValue}</div>
+
       <div className={styles.SortedContainer}>
         <p className={styles.SortByTitle}>Sort by</p>
         <select

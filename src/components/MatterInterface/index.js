@@ -3,24 +3,23 @@ import React from "react";
 import Title from "../Shared/SectionsTitles";
 
 const MatterInterface = ({ title, children }) => {
-  const SecTitle = title.split(" ");
   return (
     <section
-      className={`${
+      className={
         title === "Featured"
-          ? `${styles.Featured}`
+          ? styles.Featured
           : title === "About Matter"
-          ? `${styles.AboutMatter}`
+          ? styles.AboutMatter
           : title === "Explore"
-          ? `${styles.Explore}`
+          ? styles.Explore
           : title === "Shop"
-          ? `${styles.Shop}`
+          ? styles.Shop
           : title === "Recommended Videos"
-          ? `${styles.RecommendedVideos}`
+          ? styles.RecommendedVideos
           : title === "As Seen On"
-          ? `${styles.AsSoonOn}`
+          ? styles.AsSoonOn
           : ""
-      }`}
+     }
     >
       <Title title={title} />
       {children && children}
