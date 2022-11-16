@@ -74,7 +74,14 @@ const ProductsListContainer = () => {
 
   const LoadingMoreProducts = () => {
     setItemsNumber(itemsNumber + 9);
-    const sliceArray = [...products].slice(0, itemsNumber + 9);
+    let sliceArray;
+    targetValue === "price"
+      ? (sliceArray = [...products]
+          .slice(0, itemsNumber + 9)
+          .sort((a, b) => a.price - b.price))
+      : (sliceArray = [...products]
+          .slice(0, itemsNumber + 9)
+          .sort((a, b) => a.title.localeCompare(b.title)));
     setProductList(sliceArray);
     console.log(sliceArray.length);
     if (sliceArray.length === products.length) {
@@ -84,7 +91,7 @@ const ProductsListContainer = () => {
 
   return (
     <>
-      <ProductBanner products={products} filteredValue={filteredValue}/>
+      <ProductBanner products={products} filteredValue={filteredValue} />
       <SortBar OnSortSelected={OnSortSelected} filteredValue={filteredValue} />
       <div className={styles.ProductsListContainer}>
         <Filters

@@ -58,9 +58,27 @@
   text-align: left;
   line-height: 40px;
   position: absolute;
-  left: calc(100% * (150/1440));
-  top:10px;
+  left: calc(100% * (150 / 1440));
+  top: 10px;
   display: flex;
   align-items: center;
   text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+  /* .CategoryTitle {
+    left:5%;
+  } */
+  .SortedContainer{
+    right:5%;
+    width:40%;
+
+  }
+  .SortByTitle{
+    font-size: 18px;
+    width:27%;
+  }
+  .Selector{
+    width: 70%;
+  }
 }

@@ -15,14 +15,13 @@ const ProductBanner = ({ products, filteredValue }) => {
         alt="banner image"
       />
       {filteredValue === "" ? (
-        <>
-          <p className={styles.BannerTitle}>See our products </p>{" "}
-          <p className={styles.BannerDescription}> Groceries,Home-Decoration, Fragrances and more.. </p>
-        </>
+        <div className={styles.BannerParagraph}>
+          <div className={styles.BannerTitle}>See our products </div>{" "}
+          <div className={styles.BannerDescription}> Groceries,Home-Decoration, Fragrances and more.. </div>
+        </div>
       ) : (
         <p className={styles.BannerTitle}>{filteredValue}</p>
       )}
-      {/* <p className={styles.BannerTitle}>{filteredValue}</p> */}
     </div>
   );
 };

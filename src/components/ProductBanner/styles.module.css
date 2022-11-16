@@ -17,6 +17,11 @@
   border-radius: 3mm;
   right: calc(100% * (135 / 1440));
 }
+
+.BannerParagraph {
+  display: flex;
+  flex-direction: column;
+}
 .BannerTitle {
   position: absolute;
   right: calc(100% * (638.5 / 1440));
@@ -48,5 +53,34 @@
   line-height: 40px;
   position: absolute;
   right: calc(100% * (685 / 1440));
-  margin-top:160px;
+  margin-top: 65px;
+}
+@media (max-width: 767px) {
+  .ProductBanner {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+  }
+  .BannerImage {
+    width: 50%;
+    height: 300px;
+    top: 30px;
+    right: 26%;
+  }
+  .BannerParagraph {
+    width: 100%;
+  }
+  .BannerTitle {
+    font-size: 50px;
+    top: 369px;
+    width: 77%;
+    left: 10%;
+  }
+  .BannerDescription {
+    top: 467px;
+    width: 77%;
+    left: 15%;
+    text-align: center;
+  }
 }
