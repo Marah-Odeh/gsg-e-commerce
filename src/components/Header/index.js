@@ -2,14 +2,17 @@ import styles from "./styles.module.css";
 import ListItems from "./ListItems";
 import RightIcons from "./RightIcons";
 import BurgerMenu from "./BurgerMenu";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 const Header = () => {
+const[logoClicked,setLogoClicked]=useState(false);
   return (
     <header className={styles.HeaderContainer}>
       <>
-      <h2 className={styles.Logo}>matters</h2>
+      <Link to="/" className={styles.Logo} onClick={()=>{setLogoClicked(true)}}>matters</Link>
       <BurgerMenu/>
-      <ListItems />
-      <RightIcons />
+      <ListItems logoClicked={logoClicked}setLogoClicked={setLogoClicked}/>
+      <RightIcons  />
       </>
     </header>
   );

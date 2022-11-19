@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
-
+import { NavData } from "../NavData";
+import { Link } from "react-router-dom";
 const BurgerMenu = () => {
   const [flag, setFlag] = useState(false);
   function HandelMenuOnClick() {
     setFlag(!flag);
   }
-  const menuItems = ["Login", "shop", "fabric", "journal", "About"];
 
   return (
     <div className={styles.BurgerMenu}>
@@ -19,15 +19,18 @@ const BurgerMenu = () => {
       />
       {flag && (
         <ul className={styles.BurgerMenuList}>
-          {menuItems.map((item) => {
+          {NavData.map((item) => {
+            const { title, path } = item;
             return (
-              <li className={styles.MenuItem}>
-                <a>
+              <Link to={path} className={styles.MenuLink}>
+                <li className={styles.MenuItem}>
                   {" "}
-                  {item}
-                 <span  className={styles.ArrowIcon}><MdKeyboardArrowRight /></span> 
-                </a>
-              </li>
+                  {title}
+                  <span className={styles.ArrowIcon}>
+                    <MdKeyboardArrowRight />
+                  </span>
+                </li>
+              </Link>
             );
           })}
         </ul>

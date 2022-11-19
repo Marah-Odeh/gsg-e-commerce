@@ -11,11 +11,15 @@
     top: 40%;
     width: 25px;
     color: black;
+    cursor: pointer;
   }
   .BurgerMenu {
     position: relative;
     width: 150px;
     margin-bottom:3%
+  }
+  .MenuLink{
+    text-decoration: none;
   }
   .BurgerMenuList {
     width: 100%;
@@ -26,6 +30,9 @@
     right: 0px;
     box-shadow: 0px 10px 40px rgba(0, 1, 1, 0);
     border-radius: 0 0 5px 5px;
+    text-decoration: none;
+
+
   }
   .MenuItem {
     opacity: 1;
@@ -39,7 +46,8 @@
     line-height: 40px;
     text-transform: uppercase;
     margin-left:10px;
-   
+    text-decoration: none;
+
   }
 
 }
