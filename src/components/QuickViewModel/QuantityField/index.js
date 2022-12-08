@@ -2,14 +2,19 @@ import React from "react";
 import QuantityCounter from "./QuantityCounter";
 import AddToCartAndWishlist from "./AddToCartAndWishlist";
 import styles from "./styles.module.css";
+import { useShoppingCart } from "../../../context/ShoppingCartContext";
 
-const QuantityField = () => {
+const QuantityField = ({ id }) => {
+  const { getItemQuantity, increaseCartQuantity,decreaseCartQuantity } = useShoppingCart();
   return (
     <div className={styles.QuantityField}>
       <p className={styles.QuantityTitle}>Quantity</p>
       <div className={styles.QuantityItems}>
-        <QuantityCounter />
-        <AddToCartAndWishlist />
+        <QuantityCounter id={id} getItemQuantity={getItemQuantity} increaseCartQuantity={increaseCartQuantity} decreaseCartQuantity={decreaseCartQuantity}/>
+        <AddToCartAndWishlist
+          increaseCartQuantity={increaseCartQuantity}
+          id={id}
+        />
       </div>
     </div>
   );

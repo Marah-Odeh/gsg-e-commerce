@@ -1,26 +1,43 @@
 .userLogin-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 167px;
-    height: 40px;
-    margin-left: 282px;
-    opacity: 1;
-    color: rgba(51, 51, 58, 1);
-    font-family: "ProximaNova-Semibold";
-    font-size: 12px;
-    font-weight: 600;
-    font-style: normal;
-    letter-spacing: 1px;
-    text-align: left;
-    line-height: 40px;
-    text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  width: calc(100% * (221 / 1440));
+  position: absolute;
+  right: calc(100% * (329 / 1440));
+  opacity: 1;
+  color: rgba(51, 51, 58, 1);
+  font-family: "ProximaNova-Semibold";
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  line-height: 40px;
+  text-transform: uppercase;
+  justify-content: space-around;
+}
+.WelcomeText {
+  max-width: 150px;
+}
+.ProfilePicture {
+  border-radius: 20px;
+  opacity: 1;
+  background-size: 100%;
+  margin-left: 2%;
+  width: 40px;
+  height: 40px;
 }
 
-.userLogin-container img {
-    border-radius: 20px;
-    opacity: 1;
-    background-size: 100%;
-    margin-left: 10px;
- 
+.LogoutMenu {
+  background-color: white;
+  height: 40px;
+  width: 80px;
+  position: absolute;
+  right: calc(100% * (303 / 1440));
+  border-radius: 2px;
+  top: 80px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
 }

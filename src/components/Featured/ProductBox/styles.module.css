@@ -3,16 +3,20 @@
   flex-wrap: wrap;
   margin-top: 28px;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .ProductItems:hover {
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
   height: 450px;
-  width: 238px;
+}
+#same:hover{
+  transform: scale(1.05);
 
 }
-
+#removeTransform:hover{
+  transform: none;
+}
 .ProductItems {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,15 @@
+.AsSeenOnInstagram {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.AsSeenOnInstagramImage {
+  width: 258px;
+  height: 258px;
+}
+
+@media (max-width: 767px) {
+  .AsSeenOnInstagram {
+    justify-content: center;
+  }
+}

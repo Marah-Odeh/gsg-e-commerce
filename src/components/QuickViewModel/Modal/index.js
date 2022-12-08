@@ -6,10 +6,12 @@ import InformationTable from "../TableContainer";
 import TitleRatingAndPrice from "../TitleRatingAndPrice";
 import ProductImages from "../ImagesContainer";
 import { AiOutlineClose } from "react-icons/ai";
+import ProductDetailsButton from "../ProductDetailsButton";
 
 
 const Modal = ({
-  closeModel,
+  id,
+  openModal,
   title,
   description,
   price,
@@ -20,6 +22,7 @@ const Modal = ({
   category,
   SetIsHovering,
 }) => {
+
   return (
     <div className={styles.ModalBackground}>
       <div className={styles.ModalContainer}>
@@ -28,7 +31,7 @@ const Modal = ({
           <button
             className={styles.CloseBtn}
             onClick={() => {
-              closeModel(false);
+              openModal(false);
               SetIsHovering(-1);
             }}
           >
@@ -43,9 +46,11 @@ const Modal = ({
             <TitleRatingAndPrice title={title} rating={rating} price={price} />
             <ModalDescription description={description} />
             <InformationTable stock={stock} brand={brand} category={category} />
-            <QuantityField />
+            <QuantityField id={id}/>
           </div>
         </div>
+        <ProductDetailsButton/>
+
       </div>
     </div>
   );

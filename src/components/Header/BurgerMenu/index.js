@@ -3,8 +3,10 @@ import styles from "./styles.module.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { NavData } from "../NavData";
 import { Link } from "react-router-dom";
+import { useCookies } from "react-cookie";
 const BurgerMenu = () => {
   const [flag, setFlag] = useState(false);
+  const [cookie] = useCookies();
   function HandelMenuOnClick() {
     setFlag(!flag);
   }
@@ -19,6 +21,19 @@ const BurgerMenu = () => {
       />
       {flag && (
         <ul className={styles.BurgerMenuList}>
+          {cookie.token ? (
+            <></>
+          ) : (
+            <Link to={"/login"} className={styles.MenuLink}>
+              <li className={styles.MenuItem}>
+                Login
+                <span className={styles.ArrowIcon}>
+                  <MdKeyboardArrowRight />
+                </span>
+              </li>
+            </Link>
+          )}
+
           {NavData.map((item) => {
             const { title, path } = item;
             return (

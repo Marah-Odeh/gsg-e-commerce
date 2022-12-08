@@ -4,6 +4,7 @@ import Modal from "../../QuickViewModel/Modal";
 // import { products } from "../ProductDetails";
 
 const ImageCard = ({
+  id,
   thumbnail: ProductImage,
   ImageIndex,
   ButtonText,
@@ -15,10 +16,10 @@ const ImageCard = ({
   stock,
   brand,
   category,
- 
 }) => {
   const [isHovering, SetIsHovering] = useState(-1);
   const [openModal, setOpenModal] = useState(false);
+
   return (
     <div
       className={styles.ImageCardContainer}
@@ -53,6 +54,7 @@ const ImageCard = ({
       </button>
       {openModal && (
         <Modal
+          id={id}
           title={title}
           description={description}
           price={price}
@@ -61,7 +63,7 @@ const ImageCard = ({
           stock={stock}
           brand={brand}
           category={category}
-          closeModel={setOpenModal}
+          openModal={setOpenModal}
           SetIsHovering={SetIsHovering}
         />
       )}

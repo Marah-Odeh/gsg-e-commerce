@@ -1,0 +1,24 @@
+.ProductDetailsButton {
+  opacity: 1;
+  background-color: rgba(51, 51, 58, 1);
+  opacity: 1;
+  color: rgba(255, 255, 255, 1);
+  font-family: "ProximaNova-Bold";
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 25%;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 40%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+@media (max-width: 767px){
+    .ProductDetailsButton{ width:50%;margin-left:25%}
+
+}

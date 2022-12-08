@@ -1,0 +1,20 @@
+.ProductCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 29px;
+  width: 361px;
+  height: 400px;
+}
+.productDescription {
+  width: 100%;
+  opacity: 1;
+  color: rgba(3, 3, 3, 1);
+  font-family: "ProximaNova-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: center;
+  line-height: 30px;
+}

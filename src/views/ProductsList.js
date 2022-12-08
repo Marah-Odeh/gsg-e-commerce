@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ProductsListContainer from "../components/ProductsListContainer";
 
 const ProductsList = () => {

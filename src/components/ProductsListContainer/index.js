@@ -14,6 +14,7 @@ const ProductsListContainer = () => {
   const [fullFlag, setFullFlag] = useState(false);
   const [targetValue, setTargetValue] = useState("title");
   const [filteredValue, setFilteredValue] = useState("");
+  const [AllProducts, setAllProducts] = useState([]);
   useEffect(() => {
     console.log("inside use effect");
     let ignore = false;
@@ -23,11 +24,7 @@ const ProductsListContainer = () => {
         if (!ignore) {
           console.log(res.data.products);
           setProducts(res.data.products);
-          setProductList(
-            res.data.products
-              .sort((a, b) => a.title.localeCompare(b.title))
-              .slice(0, 12)
-          );
+
           console.log("!ignore");
         }
       })
@@ -40,9 +37,16 @@ const ProductsListContainer = () => {
     };
   }, []);
 
+  useEffect(() => {
+    setAllProducts(products);
+    const slice = products
+      .sort((a, b) => a.title.localeCompare(b.title))
+      .slice(0, 12);
+    setProductList(slice);
+  }, [products]);
+
   const categories = products.map((x) => x.category);
   const OnFilterValueSelected = (filterValue) => {
-    setFullFlag(true);
     let FilteredList;
     setFilteredValue(filterValue);
     if (targetValue === "price") {
@@ -54,21 +58,23 @@ const ProductsListContainer = () => {
         .filter((x) => x.category === filterValue)
         .sort((a, b) => a.title.localeCompare(b.title));
     }
-
-    setProductList(FilteredList);
+    setAllProducts(FilteredList);
+    setProductList(FilteredList.slice(0, 12));
   };
 
   const OnSortSelected = (target) => {
     console.log(target);
     setTargetValue(target);
     if (target === "price") {
-      const sortedArray = [...ProductList].sort((a, b) => a.price - b.price);
-      setProductList(sortedArray);
+      const sortedArray = [...AllProducts].sort((a, b) => a.price - b.price);
+      setAllProducts(sortedArray);
+      setProductList(sortedArray.slice(0, 12));
     } else if (target === "title") {
-      const nameSortedArray = [...ProductList].sort((a, b) =>
+      const nameSortedArray = [...AllProducts].sort((a, b) =>
         a.title.localeCompare(b.title)
       );
-      setProductList(nameSortedArray);
+      setAllProducts(nameSortedArray);
+      setProductList(nameSortedArray.slice(0, 12));
     }
   };
 
@@ -76,18 +82,23 @@ const ProductsListContainer = () => {
     setItemsNumber(itemsNumber + 9);
     let sliceArray;
     targetValue === "price"
-      ? (sliceArray = [...products]
+      ? (sliceArray = [...AllProducts]
           .slice(0, itemsNumber + 9)
           .sort((a, b) => a.price - b.price))
-      : (sliceArray = [...products]
+      : (sliceArray = [...AllProducts]
           .slice(0, itemsNumber + 9)
           .sort((a, b) => a.title.localeCompare(b.title)));
     setProductList(sliceArray);
     console.log(sliceArray.length);
-    if (sliceArray.length === products.length) {
+    if (sliceArray.length === AllProducts.length) {
       setFullFlag(true);
     }
   };
+  useEffect(() => {
+    ProductList.length === AllProducts.length
+      ? setFullFlag(true)
+      : setFullFlag(false);
+  }, [AllProducts]);
 
   return (
     <>
