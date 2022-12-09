@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const UserLogin = () => {
-  const [cookie, removeCookie] = useCookies();
+  const [cookie, removeCookie] = useCookies("token");
   const [userData, setUerData] = useState({});
   const [logOutFlag, setLogOutFlag] = useState(false);
   useEffect(() => {
@@ -33,7 +33,7 @@ const UserLogin = () => {
   };
   const handleRemoveToken = () => {
     console.log("remove");
-    removeCookie("name")
+    removeCookie("token");
   };
   return (
     <>

@@ -10,7 +10,7 @@ const RightIcons = () => {
 
   return (
     <>
-      {(cookie.token || cookie.token!==undefined) ? (
+      {(cookie.token && cookie.token!==undefined) ? (
         <UserLogin />
       ) : (
         <Link to="/login" className={styles.Login} href="#">

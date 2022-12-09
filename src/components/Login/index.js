@@ -1,13 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./styles.module.css";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { IoMdReturnLeft } from "react-icons/io";
 import axios from "axios";
 import { useCookies } from "react-cookie";
 const Login = () => {
   const [formData, setFormData] = useState({});
   const [cookie, setCookie] = useCookies();
-  const [saveToken, setSaveToken] = useState("");
 
   const handleEmailChange = (e) => {
     setFormData({ ...formData, email: e.target.value });
@@ -26,7 +25,6 @@ const Login = () => {
       formData
     );
     console.log(Token, Name, Id);
-    setSaveToken(Token);
     setCookie("token", Token);
     setCookie("name", Name);
     setCookie("id", Id);
@@ -76,6 +74,7 @@ const Login = () => {
           <button onClick={handleSubmit} className={styles.LoginBtn}>
             Log In
           </button>
+          {cookie.token && <Navigate to="/" />}
         </div>
       </div>
     </>

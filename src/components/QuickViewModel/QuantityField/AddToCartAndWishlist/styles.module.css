@@ -1,5 +1,6 @@
 .AddToCartAndWishlist {
   display: flex;
+  width:88%
 }
 .AddToCartBtn {
   opacity: 1;
@@ -14,13 +15,13 @@
   text-align: center;
   line-height: 20px;
   text-transform: uppercase;
-  width: 140px;
+  width: 40%;
   height: 40px;
   cursor: pointer;
 }
 .AddToCartAndWishlist {
-  margin-left: 21px;
-  padding-left: 25px;
+  margin-left: 3.0%;
+  padding-left: 2.3%;
 }
 .Wishlist{
   display: flex;
@@ -39,8 +40,7 @@
   text-align: center;
   line-height: 20px;
   text-transform: uppercase;
-  width: 135px;
-  height: 30px;
+  width: 100%;
   margin-left: 7.69px;
   border: none;
   border-bottom: solid;

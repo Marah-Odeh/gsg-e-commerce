@@ -1,0 +1,102 @@
+.CustomerReviewsSection {
+  margin-top: 116px;
+  padding-left: calc(100% * (344 / 1440));
+  padding-right: calc(100% * (345 / 1440));
+}
+.ReviewsSectionHeader {
+  width: 100%;
+  display: flex;
+  margin-top: 25px;
+  justify-content: start;
+  align-items: center;
+}
+.ReviewHeaderParagraph {
+  opacity: 1;
+  color: rgba(102, 102, 102, 1);
+  font-family: "ProximaNova-Regular";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 25px;
+  margin-left: calc(100% * (155 / 1440));
+  margin-right: calc(100% * (21 / 1440));
+}
+.ReviewsBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.StarRating {
+  display: flex;
+  justify-content: start;
+}
+.ReviewsSubTitle {
+  margin-top: 28px;
+  margin-bottom: 15px;
+  opacity: 1;
+  color: rgba(51, 51, 58, 1);
+  font-family: "ProximaNova-Semibold";
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 30px;
+}
+.ReviewsDetails {
+  opacity: 1;
+  color: rgba(102, 102, 102, 1);
+  font-family: "ProximaNova-Light";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: justified;
+  line-height: 20px;
+}
+.CustomerName {
+  opacity: 1;
+  color: rgba(51, 51, 58, 1);
+  font-family: "ProximaNova-Light";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 25px;
+  margin-bottom: 12px;
+}
+.ReviewsDetailsParagraph {
+  opacity: 1;
+  color: rgba(51, 51, 58, 1);
+  font-family: "ProximaNova-Light";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 25px;
+  margin-bottom: 9px;
+}
+.ShowMore {
+  opacity: 1;
+  color: rgba(255, 94, 27, 1);
+  font-family: "ProximaNova-Semibold";
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (max-width: 767px){
+.ReviewsSectionHeader{
+    flex-direction: column;
+    justify-content: start;
+}
+}

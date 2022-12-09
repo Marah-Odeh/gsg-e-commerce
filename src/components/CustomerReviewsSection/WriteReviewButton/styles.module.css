@@ -1,0 +1,17 @@
+.WriteReviewButton {
+  opacity: 1;
+  color: rgba(255, 255, 255, 1);
+  font-family: "ProximaNova-Bold";
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 170px;
+  height: 40px;
+  opacity: 1;
+  background-color: rgba(51, 51, 58, 1);
+  cursor: pointer;
+}

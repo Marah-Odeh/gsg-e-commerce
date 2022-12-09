@@ -4,12 +4,14 @@ import styles from "./styles.module.css";
 
 const ProductDetailsButton = ({ productId }) => {
   return (
-    <Link
-      className={styles.ProductDetailsButton}
-      to={`/productDetails/${productId}`}
-    >
-      View Full product Details{" "}
-    </Link>
+    <>
+      <Link
+        to={`/productDetails/${productId}`}
+        className={styles.ProductDetailsButton}
+      >
+        View Full product Details{" "}
+      </Link>
+    </>
   );
 };
 

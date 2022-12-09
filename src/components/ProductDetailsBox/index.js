@@ -8,7 +8,7 @@ import InformationTable from "../QuickViewModel/TableContainer";
 import QuantityField from "../QuickViewModel/QuantityField";
 import ProductImages from "../QuickViewModel/ImagesContainer";
 import { IoIosArrowForward } from "react-icons/io";
-const ProductDetailsBox = () => {
+const ProductDetailsBox = ({ getRating }) => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     console.log("inside use effect");
@@ -37,11 +37,16 @@ const ProductDetailsBox = () => {
   return (
     <div className={styles.ProductDetailsBox}>
       {products.map((i) => {
-        if (i.id == productId) {
+        if (i.id === +productId) {
+          getRating(i.rating);
           return (
             <>
               <div className={styles.HeaderContainer}>
-                <p className={styles.HeaderTitle}>{i.category}<IoIosArrowForward/>{i.title}</p>
+                <p className={styles.HeaderTitle}>
+                  {i.category}
+                  <IoIosArrowForward />
+                  {i.title}
+                </p>
               </div>
               <div className={styles.ModalBody}>
                 <div className={styles.ImagesBox}>
