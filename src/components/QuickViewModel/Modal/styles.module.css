@@ -15,10 +15,10 @@
 
 .ModalContainer {
   width: calc(100% * (1190 / 1440));
-  height: calc(100% * (980 / 990));
+  max-height: 90vh;
   overflow: scroll;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
   display: flex;
   flex-direction: column;
 }

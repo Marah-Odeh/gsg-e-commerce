@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import ProductBox from "../Featured/ProductBox";
 import axios from "axios";

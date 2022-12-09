@@ -1,0 +1,45 @@
+.ProductDetailsBox {
+  margin-bottom: 100px;
+}
+.HeaderContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 1);
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.HeaderTitle {
+  width: fit-content;
+  opacity: 1;
+  color: rgba(3, 3, 3, 1);
+  font-family: "proxima-nova", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 40px;
+  margin-left: calc(100% * (149 / 1440));
+  text-transform: capitalize;
+}
+.ModalBody {
+  display: flex;
+  flex-direction: row;
+  padding-left: calc(100% * (149 / 1440));
+  padding-right: calc(100% * (151 / 1440));
+}
+.ImagesBox,
+.DetailsBox {
+  width: 50%;
+}
+.ImagesBox {
+  padding-right: 25px;
+}
+.DetailsBox {
+  padding-left: 25px;
+}

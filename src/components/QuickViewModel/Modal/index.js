@@ -49,7 +49,7 @@ const Modal = ({
             <QuantityField id={id}/>
           </div>
         </div>
-        <ProductDetailsButton/>
+        <ProductDetailsButton productId={id}/>
 
       </div>
     </div>

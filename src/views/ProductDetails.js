@@ -2,11 +2,14 @@ import React from "react";
 import AsSeenOnInstagram from "../components/AsSeenOnInstagram";
 import MatterInterface from "../components/MatterInterface";
 import ProductDetailsContainer from "../components/ProductDetailsContainer";
-import YouMayAlsoLike from "../components/YouMayAlsoLike/inex";
+import YouMayAlsoLike from "../components/YouMayAlsoLike";
+import ProductDetailsBox from "../components/ProductDetailsBox";
 
 const ProductDetails = () => {
+  
   return (
     <div>
+        <ProductDetailsBox  />
       <ProductDetailsContainer />
       <MatterInterface title="As Seen On Instagram">
         <AsSeenOnInstagram />

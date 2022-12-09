@@ -1,10 +1,16 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 
-const ProductDetailsButton = () => {
+const ProductDetailsButton = ({ productId }) => {
   return (
-        <button  className={styles.ProductDetailsButton}>View Full product Details</button>
-  )
-}
+    <Link
+      className={styles.ProductDetailsButton}
+      to={`/productDetails/${productId}`}
+    >
+      View Full product Details{" "}
+    </Link>
+  );
+};
 
-export default ProductDetailsButton
+export default ProductDetailsButton;
