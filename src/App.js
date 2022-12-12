@@ -5,7 +5,7 @@ import Router from "./Router";
 const App = () => {
   return (
     <div className={styles.App}>
-    <Router/>
+      <Router />
     </div>
   );
 };

@@ -1,13 +1,15 @@
 import styles from "./styles.module.css";
 import VideosContainer from "../VideosContainer";
 import ShowMoreButton from "../ShowMoreButton";
+import { useState } from "react";
 
 const RecommendedVideosContainer = () => {
+  const [showMoreValue, setShowMoreValue] = useState(false);
   return (
     <div className={styles.RecomendedVideoesContainer}>
       <>
-        <VideosContainer />
-        <ShowMoreButton />
+        <VideosContainer showMoreValue={showMoreValue} />
+        <ShowMoreButton setShowMoreValue={setShowMoreValue} />
       </>
     </div>
   );

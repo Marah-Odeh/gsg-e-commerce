@@ -1,17 +1,14 @@
-.RecomendedVideoesContainer{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: fit-content ;
-    position: relative;
-    flex-wrap: wrap;
+.RecomendedVideoesContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 767px) {
-    .RecomendedVideoesContainer {
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 1070px;
-    }
+  .RecomendedVideoesContainer {
+    align-items: center;
+    justify-content: center;
   }
+}

@@ -2,6 +2,7 @@ import styles from "./styles.module.css";
 import Arrow from "./Arrow";
 import { slides } from "./Slides";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slideStyle = {
@@ -30,7 +31,7 @@ const Slider = () => {
           Perfume Tips <br />
           Tricks
         </p>
-        <p id={styles.ShopNow}>Shop Now </p>
+        <Link to="/products"id={styles.ShopNow}>Shop Now </Link>
         <Arrow
           AreaDirection="Left"
           ArrowDirection="NextArrow"

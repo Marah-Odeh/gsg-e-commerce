@@ -2,12 +2,17 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./styles.module.css";
 import { Link, Navigate } from "react-router-dom";
 import { IoMdReturnLeft } from "react-icons/io";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import axios from "axios";
 import { useCookies } from "react-cookie";
 const Login = () => {
   const [formData, setFormData] = useState({});
   const [cookie, setCookie] = useCookies();
-
+  const [error, setError] = useState(false);
+  const [passwordShown, setPasswordShown] = useState(false);
+  const togglePassword = () => {
+    setPasswordShown(!passwordShown);
+  };
   const handleEmailChange = (e) => {
     setFormData({ ...formData, email: e.target.value });
   };
@@ -15,19 +20,22 @@ const Login = () => {
     setFormData({ ...formData, password: e.target.value });
   };
   const handleSubmit = async () => {
-    console.log(formData);
-    const {
-      data: {
-        data: { Token, Name, Id },
-      },
-    } = await axios.post(
-      "http://restapi.adequateshop.com/api/authaccount/login",
-      formData
-    );
-    console.log(Token, Name, Id);
-    setCookie("token", Token);
-    setCookie("name", Name);
-    setCookie("id", Id);
+    try {
+      const {
+        data: {
+          data: { Token, Name, Id },
+        },
+      } = await axios.post(
+        "http://restapi.adequateshop.com/api/authaccount/login",
+        formData
+      );
+      console.log(Token, Name, Id);
+      setCookie("token", Token);
+      setCookie("name", Name);
+      setCookie("id", Id);
+    } catch (err) {
+      setError(true);
+    }
   };
   return (
     <>
@@ -53,7 +61,7 @@ const Login = () => {
             </p>
           </div>
           <div className={styles.LabelWrapper}>
-            <label for="email">Email</label>
+            <label>Email</label>
             <input
               value={formData.email}
               type="text"
@@ -62,16 +70,28 @@ const Login = () => {
             />
           </div>
           <div className={styles.LabelWrapper}>
-            <label for="password">Password</label>
+            <label>Password</label>
             <input
               value={formData.password}
-              type="password"
+              type={passwordShown ? "text" : "password"}
               placeholder="Password"
-              id="password"
               onChange={handlePasswordChange}
             />
+            <a className={styles.Eye} onClick={togglePassword}>
+              {passwordShown ? <FaEye /> : <FaEyeSlash />}
+            </a>
           </div>
-          <button onClick={handleSubmit} className={styles.LoginBtn}>
+          {error && (
+            <div className={styles.ErrorMessage}>
+              {" "}
+              The Email or password you entered is incorrect, please try again.
+            </div>
+          )}
+          <button
+            onClick={handleSubmit}
+            className={styles.LoginBtn}
+            id={error && styles.ChangeBtnMargin}
+          >
             Log In
           </button>
           {cookie.token && <Navigate to="/" />}

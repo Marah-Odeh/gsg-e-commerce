@@ -1,6 +1,8 @@
 .ProductBannerImage {
   width: 100%;
   height: 480px;
+  background-image: url("/public/images/PD1.png");
+  background-size: cover;
 }
 .ProductDetailsParagraph {
   width: 100%;

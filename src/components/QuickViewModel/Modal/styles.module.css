@@ -16,7 +16,7 @@
 .ModalContainer {
   width: calc(100% * (1190 / 1440));
   max-height: 90vh;
-  overflow: scroll;
+  overflow: auto;
   background-color: white;
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
   display: flex;

@@ -1,4 +1,4 @@
-.userLogin-container {
+.UserLoginContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -40,4 +40,13 @@
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
+}
+@media (max-width: 767px) {
+  .WelcomeText {
+    display: none;
+  }
+  .UserLoginContainer {
+    width: 10px;
+  }
+ 
 }

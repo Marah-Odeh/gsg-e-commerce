@@ -1,0 +1,36 @@
+.Error404Container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.Error404Animation {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 500px;
+  width: 100%;
+}
+
+.ReturnHomeBtn {
+  border: 1px solid white;
+  background: #F6BE00;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  transition: background-color 200ms ease-in;
+  margin: 20px 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ReturnHomeBtn:hover{
+    border-color: #F6BE00;
+    border-width: 2px;
+    background-color: white;
+    color: rgb(66, 153, 225);
+}

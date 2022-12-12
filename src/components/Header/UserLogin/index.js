@@ -1,10 +1,10 @@
-import "./styles.css";
+import styles from "./styles.module.css";
 import { useCookies } from "react-cookie";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
 const UserLogin = () => {
-  const [cookie, removeCookie] = useCookies("token");
+  const [cookie, setCookie,removeCookie] = useCookies();
   const [userData, setUerData] = useState({});
   const [logOutFlag, setLogOutFlag] = useState(false);
   useEffect(() => {
@@ -37,17 +37,17 @@ const UserLogin = () => {
   };
   return (
     <>
-      <div className="userLogin-container">
-        <span className={"WelcomeText"}>Welcome, {cookie.name}</span>
+      <div className={styles.UserLoginContainer}>
+        <span className={styles.WelcomeText}>Welcome, {cookie.name}</span>
         <img
           src={userData.profilepicture}
           alt="user_image"
-          className="ProfilePicture"
+          className={styles.ProfilePicture}
           onClick={handleLogOut}
         />
       </div>
       {logOutFlag && (
-        <div className="LogoutMenu">
+        <div className={styles.LogoutMenu}>
           <a onClick={handleRemoveToken}>
             <span>Logout</span>
           </a>
