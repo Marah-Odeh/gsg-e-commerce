@@ -1,12 +1,11 @@
 .IconsContainer {
   position: absolute;
   right: calc(100% * (161.96 / 1440));
-  width: calc(100% * (136.01 / 1440));
+  width: calc(100% * (70.01 / 1440));
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 
 .Login {
   position: absolute;
@@ -23,7 +22,7 @@
   text-transform: uppercase;
   text-decoration: none;
 }
-.QuantityCircle{
+.QuantityCircle {
   top: 10px;
   left: 10px;
   height: 15px;
@@ -35,20 +34,18 @@
   text-align: center;
   font-weight: 500;
   color: white;
-  
 }
-.CartIcon{
+.CartIcon {
   position: relative;
   cursor: pointer;
 }
 @media (max-width: 767px) {
   .IconsContainer {
     position: absolute;
-    width: 15%;
+    width: 12%;
     right: 20px;
   }
   .Login {
-    /* font-size: 10px; */
     display: none;
   }
 }

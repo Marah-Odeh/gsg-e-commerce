@@ -10,7 +10,6 @@
   line-height: 30px;
 }
 .DescriptionCont {
-  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

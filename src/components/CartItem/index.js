@@ -1,31 +1,10 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
 import styles from "./styles.module.css";
 import { useShoppingCart } from "../../context/ShoppingCartContext";
+import { useProductsData } from "../../context/ProductsDataContext";
 
 const CartItem = ({ id, quantity }) => {
-  const [products, setProducts] = useState([]);
-  useEffect(() => {
-    console.log("inside use effect");
-    let ignore = false;
-    axios
-      .get("https://dummyjson.com/products")
-      .then((res) => {
-        if (!ignore) {
-          console.log(res.data.products);
-          setProducts(res.data.products);
-          console.log("!ignore");
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-    return () => {
-      ignore = true;
-      console.log("ignore");
-    };
-  }, []);
-
+  const { products } = useProductsData();
   const item = products.find((i) => i.id === id);
   const { removeFromCart } = useShoppingCart();
   if (item == null) return null;

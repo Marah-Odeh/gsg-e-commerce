@@ -12,7 +12,6 @@ const ProductDetailsContainer = () => {
   return (
     <>
      <div  className={styles.ProductBannerImage}></div>  
-     {/* src={"/images/PD1.png"} /> */}
       <div className={styles.ProductDetailsParagraph} id={styles.Paragraph1}>
         {paragraph1}
       </div>

@@ -1,36 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import styles from "./styles.module.css";
-import axios from "axios";
 import TitleRatingAndPrice from "../QuickViewModel/TitleRatingAndPrice";
 import ModalDescription from "../QuickViewModel/DescriptionContainer";
 import InformationTable from "../QuickViewModel/TableContainer";
 import QuantityField from "../QuickViewModel/QuantityField";
 import ProductImages from "../QuickViewModel/ImagesContainer";
 import { IoIosArrowForward } from "react-icons/io";
+import { useProductsData } from "../../context/ProductsDataContext";
 const ProductDetailsBox = ({ getRating }) => {
-  const [products, setProducts] = useState([]);
-  useEffect(() => {
-    console.log("inside use effect");
-    let ignore = false;
-    axios
-      .get("https://dummyjson.com/products")
-      .then((res) => {
-        if (!ignore) {
-          console.log(res.data.products);
-          setProducts(res.data.products);
-          console.log("!ignore");
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-    return () => {
-      ignore = true;
-      console.log("ignore");
-    };
-  }, []);
-
+  const { products } = useProductsData();
   const location = useLocation();
   const productId = location.pathname.split("/")[2];
 

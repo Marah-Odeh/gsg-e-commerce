@@ -12,11 +12,11 @@ import SeeButton from "../components/Explore/SeeButton";
 const HomePage = () => {
   return (
     <>
-      
       <Slider />
       <MatterInterface title="Featured">
         <Featured />
       </MatterInterface>
+
       <MatterInterface title="About Matter">
         <AboutContainer />
       </MatterInterface>

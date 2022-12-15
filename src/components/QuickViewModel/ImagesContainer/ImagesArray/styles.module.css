@@ -23,8 +23,7 @@
 
   @media (max-width: 767px){
     .ImagesArray {
-      width: 12%;
-      height: 58vh;
+      width: 15%;
     }
     .ProdImage {
       width: 85%;

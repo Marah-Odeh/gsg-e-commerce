@@ -20,7 +20,6 @@ const RightIcons = () => {
 
       <div className={styles.IconsContainer}>
         <>
-          <img src="icons/search.svg" alt="" />
           <img src="icons/heart.svg" alt="" />
           <div className={styles.CartIcon}>
             {" "}

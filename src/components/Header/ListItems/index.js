@@ -38,7 +38,7 @@ const ListItems = ({ logoClicked, setLogoClicked }) => {
                 {logoClicked === false && itemIndex === index && isActive ? (
                   <IoIosArrowUp color="#FF6008" />
                 ) : (
-                  <i class="fa-solid fa-angle-down fa-lg fa-fw"></i>
+                  <i className="fa-solid fa-angle-down fa-lg fa-fw"></i>
                 )}
               </span>
             </Link>

@@ -7,24 +7,27 @@ import HomePage from "./views/HomePage";
 import ProductsList from "./views/ProductsList";
 import ProductDetails from "./views/ProductDetails";
 import Error404Page from "./components/Error404Page";
+import ProductsDataProvider from "./context/ProductsDataContext";
 const Router = () => {
   return (
-    <ShoppingCartProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route path={"/login"} element={<Login />} />
-          <Route element={<Layout />}>
-            <Route index element={<HomePage />} />
-            <Route path="/products" element={<ProductsList />} />
-            <Route
-              path={"/productDetails/:productId"}
-              element={<ProductDetails />}
-            />
-          </Route>
-          <Route path="*" element={<Error404Page />} />
-        </Routes>
-      </BrowserRouter>
-    </ShoppingCartProvider>
+    <ProductsDataProvider>
+      <ShoppingCartProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path={"/login"} element={<Login />} />
+            <Route element={<Layout />}>
+              <Route index element={<HomePage />} />
+              <Route path="/products" element={<ProductsList />} />
+              <Route
+                path={"/productDetails/:productId"}
+                element={<ProductDetails />}
+              />
+            </Route>
+            <Route path="*" element={<Error404Page />} />
+          </Routes>
+        </BrowserRouter>
+      </ShoppingCartProvider>
+    </ProductsDataProvider>
   );
 };
 

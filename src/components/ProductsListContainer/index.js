@@ -3,45 +3,25 @@ import Filters from "./Filters";
 import ProductsContainer from "./ProductsContainer";
 import styles from "./styles.module.css";
 import SortBar from "../SortBar";
-import axios from "axios";
 import Loading from "./LoadingButton";
 import ProductBanner from "../ProductBanner";
-
+import { useProductsData } from "../../context/ProductsDataContext";
+const ItemsNumberOnStart=12;
+const ItemsNumberOnAddition=9;
 const ProductsListContainer = () => {
-  const [products, setProducts] = useState([]);
   const [ProductList, setProductList] = useState([]);
-  const [itemsNumber, setItemsNumber] = useState(12);
+  const [itemsNumber, setItemsNumber] = useState(ItemsNumberOnStart);
   const [fullFlag, setFullFlag] = useState(false);
   const [targetValue, setTargetValue] = useState("title");
   const [filteredValue, setFilteredValue] = useState("");
   const [AllProducts, setAllProducts] = useState([]);
-  useEffect(() => {
-    console.log("inside use effect");
-    let ignore = false;
-    axios
-      .get("https://dummyjson.com/products")
-      .then((res) => {
-        if (!ignore) {
-          console.log(res.data.products);
-          setProducts(res.data.products);
-
-          console.log("!ignore");
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-    return () => {
-      ignore = true;
-      console.log("ignore");
-    };
-  }, []);
+  const { products } = useProductsData();
 
   useEffect(() => {
     setAllProducts(products);
-    const slice = products
+    const slice = [...products]
       .sort((a, b) => a.title.localeCompare(b.title))
-      .slice(0, 12);
+      .slice(0, ItemsNumberOnStart);
     setProductList(slice);
   }, [products]);
 
@@ -59,7 +39,7 @@ const ProductsListContainer = () => {
         .sort((a, b) => a.title.localeCompare(b.title));
     }
     setAllProducts(FilteredList);
-    setProductList(FilteredList.slice(0, 12));
+    setProductList(FilteredList.slice(0, ItemsNumberOnStart));
   };
 
   const OnSortSelected = (target) => {
@@ -68,25 +48,25 @@ const ProductsListContainer = () => {
     if (target === "price") {
       const sortedArray = [...AllProducts].sort((a, b) => a.price - b.price);
       setAllProducts(sortedArray);
-      setProductList(sortedArray.slice(0, 12));
+      setProductList(sortedArray.slice(0, ItemsNumberOnStart));
     } else if (target === "title") {
       const nameSortedArray = [...AllProducts].sort((a, b) =>
         a.title.localeCompare(b.title)
       );
       setAllProducts(nameSortedArray);
-      setProductList(nameSortedArray.slice(0, 12));
+      setProductList(nameSortedArray.slice(0, ItemsNumberOnStart));
     }
   };
 
   const LoadingMoreProducts = () => {
-    setItemsNumber(itemsNumber + 9);
+    setItemsNumber(itemsNumber + ItemsNumberOnAddition);
     let sliceArray;
     targetValue === "price"
       ? (sliceArray = [...AllProducts]
-          .slice(0, itemsNumber + 9)
+          .slice(0, itemsNumber + ItemsNumberOnAddition)
           .sort((a, b) => a.price - b.price))
       : (sliceArray = [...AllProducts]
-          .slice(0, itemsNumber + 9)
+          .slice(0, itemsNumber + ItemsNumberOnAddition)
           .sort((a, b) => a.title.localeCompare(b.title)));
     setProductList(sliceArray);
     console.log(sliceArray.length);

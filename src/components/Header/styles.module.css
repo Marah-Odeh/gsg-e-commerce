@@ -31,9 +31,7 @@
     position: relative;
   }
   .Logo {
-    position: absolute;
     font-size: 35px;
-    left: 40%;
-    right: 40%;
+    margin-left: 18%;
   }
 }
