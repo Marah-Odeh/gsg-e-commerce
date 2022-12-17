@@ -9,7 +9,7 @@ import CartItem from "../CartItem";
 const ShoppingCart = ({ isOpen }) => {
   const { cartItems, closeCartMenu } = useShoppingCart();
   const DrawerStyle = {
-    width: "400px",
+    width: "350px",
     overflowY: "auto",
   };
   return (

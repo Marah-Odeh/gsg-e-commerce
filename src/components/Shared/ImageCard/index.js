@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Modal from "../../QuickViewModel/Modal";
-// import { products } from "../ProductDetails";
-
+import HoverButton from "./HoverButton";
 const ImageCard = ({
   id,
   thumbnail: ProductImage,
@@ -32,26 +31,18 @@ const ImageCard = ({
     >
       <img
         className={styles.Image}
-        id={`${isHovering === ImageIndex ? `${styles.ImageOpacity}` : ""}`}
+        id={isHovering === ImageIndex && styles.ImageOpacity}
         src={ProductImage}
         alt=""
       />
 
-      <button
-        id={`${isHovering === ImageIndex ? "" : `${styles.hidden}`}`}
-        className={
-          ButtonText === "Quick View" ? styles.QuickView : styles.ShopNow
-        }
-        onClick={
-          ButtonText === "Quick View"
-            ? () => {
-                setOpenModal(true);
-              }
-            : null
-        }
-      >
-        {ButtonText}{" "}
-      </button>
+      <HoverButton
+        ButtonText={ButtonText}
+        isHovering={isHovering}
+        ImageIndex={ImageIndex}
+        setOpenModal={setOpenModal}
+      />
+
       {openModal && (
         <Modal
           id={id}

@@ -1,0 +1,7 @@
+.SectionWrapper{
+ 
+    padding-left: calc(100% * (150 / 1440));
+    padding-right: calc(100% * (149 / 1440));
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

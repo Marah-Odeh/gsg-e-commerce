@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useLocation } from "react-router-dom";
 import styles from "./styles.module.css";
 import TitleRatingAndPrice from "../QuickViewModel/TitleRatingAndPrice";

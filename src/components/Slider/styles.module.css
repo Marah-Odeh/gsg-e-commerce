@@ -14,7 +14,7 @@
 .SliderContainer #Title {
   z-index: 1;
   opacity: 1;
-  width: calc(100% * (458/1440));
+  width: calc(100% * (458 / 1440));
   height: 160px;
   color: #ffffff;
   font-family: "HelveticaLTThai-Regular";
@@ -51,18 +51,17 @@
   text-decoration: none;
 }
 
-
-@media (max-width: 767px){
-  .SliderContainer{
+@media (max-width: 767px) {
+  .SliderContainer {
     align-items: center;
   }
-  .SliderContainer #Title{
-    font-size:35px;
-    left:30%;
+  .SliderContainer #Title {
+    font-size: 35px;
+    left: 30%;
   }
 
   .SliderContainer #ShopNow {
-    left:30%;
-
-}
+    left: 30%;
+    bottom: 150px;
+  }
 }

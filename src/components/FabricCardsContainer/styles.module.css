@@ -1,0 +1,11 @@
+.FabricCardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+@media (max-width: 767px){
+    .FabricCardsContainer{
+        justify-content: center;
+    }
+}

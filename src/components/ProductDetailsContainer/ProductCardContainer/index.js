@@ -8,7 +8,7 @@ const Card1Data = [
   { image: "/images/PD2.png", description: "Lorem ipsum dolor sit amet" },
 ];
 
-const ProductCardContainer = ({ cardNumber }) => {
+const ProductCardContainer = () => {
   return (
     <div className={styles.ProductCardContainer}>
       {Card1Data.map((item) => {

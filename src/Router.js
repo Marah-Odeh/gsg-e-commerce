@@ -8,6 +8,9 @@ import ProductsList from "./views/ProductsList";
 import ProductDetails from "./views/ProductDetails";
 import Error404Page from "./components/Error404Page";
 import ProductsDataProvider from "./context/ProductsDataContext";
+import JournalPage from "./views/JournalPage";
+import AboutPage from "./views/AboutPage";
+import FabricPage from "./views/FabricPage";
 const Router = () => {
   return (
     <ProductsDataProvider>
@@ -22,6 +25,10 @@ const Router = () => {
                 path={"/productDetails/:productId"}
                 element={<ProductDetails />}
               />
+              <Route path="/fabric" element={<FabricPage/>} />
+
+              <Route path="/journal" element={<JournalPage />} />
+              <Route path="/about" element={<AboutPage />} />
             </Route>
             <Route path="*" element={<Error404Page />} />
           </Routes>
