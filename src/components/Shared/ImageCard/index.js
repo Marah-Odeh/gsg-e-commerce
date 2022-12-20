@@ -31,7 +31,7 @@ const ImageCard = ({
     >
       <img
         className={styles.Image}
-        id={isHovering === ImageIndex && styles.ImageOpacity}
+        id={isHovering === ImageIndex ?styles.ImageOpacity:""}
         src={ProductImage}
         alt=""
       />

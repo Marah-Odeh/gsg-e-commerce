@@ -1,5 +1,4 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import { useCookies } from "react-cookie";
 import ShoppingCart from "../components/ShoppingCart";
 const ShoppingCartContext = createContext({});
 const initialCartItems = localStorage.getItem("shopping-cart")

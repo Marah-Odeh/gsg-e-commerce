@@ -3,3 +3,11 @@
     margin-left: calc(100% * (153 / 1440));
     margin-right:calc(100% * (149 / 1440)); ;
 }
+
+
+@media (max-width: 767px){
+    .ProductsListContainer{
+        flex-direction: column;
+    }
+}
+

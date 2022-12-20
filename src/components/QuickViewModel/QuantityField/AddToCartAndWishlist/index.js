@@ -5,6 +5,7 @@ const AddToCartAndWishlist = ({ increaseCartQuantity,id }) => {
  
   return (
     <div className={styles.AddToCartAndWishlist}>
+      
       <button className={styles.AddToCartBtn} onClick={()=>{increaseCartQuantity(id)}}>Add to cart</button>
       <div className={styles.Wishlist}>
         <BsQuestionSquare />

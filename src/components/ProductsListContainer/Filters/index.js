@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 
-const Filters = ({ categories, filterValueSelected }) => {
+const Filters = ({
+  categories,
+  filterValueSelected,
+  setFilteredValue,
+  reset,
+}) => {
   const [isClicked, setIsClicked] = useState(false);
   const [Index, seIndex] = useState(-1);
   const uniqueCategories = [...new Set(categories)];
@@ -11,11 +16,19 @@ const Filters = ({ categories, filterValueSelected }) => {
     setIsClicked(true);
     seIndex(index);
   };
+  const handleRest = () => {
+    reset();
+    setIsClicked(false);
+    setFilteredValue("");
+  };
+
   return (
     <div className={styles.Filters}>
       <div className={styles.FiltersHeader}>
         <p className={styles.Title}>Filters</p>
-        <p className={styles.Rest}>Reset</p>
+        <a className={styles.Rest} onClick={handleRest}>
+          Reset
+        </a>
       </div>
       <div className={styles.Categories}>
         <div className={styles.ProductsBox}>
@@ -31,7 +44,7 @@ const Filters = ({ categories, filterValueSelected }) => {
                   {Index === index && isClicked ? (
                     <IoIosArrowDown color="#FF6008" />
                   ) : (
-                    <IoIosArrowUp  />
+                    <IoIosArrowUp />
                   )}
                 </div>
               </a>

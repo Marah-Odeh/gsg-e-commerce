@@ -25,21 +25,59 @@
   opacity: 1;
   background-size: 100%;
   margin-left: 2%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .LogoutMenu {
   background-color: white;
   height: 40px;
-  width: 80px;
+  width: 158px;
   position: absolute;
-  right: calc(100% * (303 / 1440));
-  border-radius: 2px;
+  right: calc(100% * (250 / 1440));
   top: 80px;
   cursor: pointer;
+  border-radius: 2mm;
+  z-index: 999;
+  box-shadow: -93px -64px -93px -40px #354c4c;
+  border-color: #354c4c;
+}
+.LogOutItems {
+  padding-left: 5%;
+}
+
+.LogOutItems:hover {
+  background-color: #f1f3f7;
+}
+
+#Circle {
+  top: 5px;
+  left: 6px;
+  height: 30px;
+  width: 30px;
+  background-color: #e4e4e4;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 12px;
   text-align: center;
-  vertical-align: middle;
+  font-weight: 500;
+}
+#LogOut {
+  margin-left: 24%;
+  font-family: "ProximaNova-Semibold";
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#LogOutIcon {
+  height: 17px;
+  width: 17px;
+  margin-top: 5px;
 }
 @media (max-width: 767px) {
   .WelcomeText {
@@ -47,5 +85,8 @@
   }
   .UserLoginContainer {
     width: 12%;
+  }
+  .LogoutMenu {
+    right: calc(100% * (108 / 1440));
   }
 }

@@ -17,7 +17,7 @@ const VideosContainer = ({ showMoreValue }) => {
               <a href={videoLink} target="_blank">
                 <img src={image} />
                 <p id={styles.Title}>{title}</p>
-                <i id={styles.VideoIcon} class="fa-regular fa-circle-play"></i>
+                <i id={styles.VideoIcon} className="fa-regular fa-circle-play"></i>
               </a>
             </div>
           );

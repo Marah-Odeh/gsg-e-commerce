@@ -2,10 +2,10 @@ import styles from "./styles.module.css";
 import { useCookies } from "react-cookie";
 import { useEffect, useState } from "react";
 import axios from "axios";
-
+import { FiLogOut } from "react-icons/fi";
 const UserLogin = () => {
-  const [cookie, setCookie,removeCookie] = useCookies();
-  const [userData, setUerData] = useState({});
+  const [cookie, setCookie, removeCookie] = useCookies();
+  const [userData, setUserData] = useState({});
   const [logOutFlag, setLogOutFlag] = useState(false);
   useEffect(() => {
     let ignore = false;
@@ -16,7 +16,7 @@ const UserLogin = () => {
       })
       .then((user) => {
         if (!ignore) {
-          setUerData(user.data);
+          setUserData(user.data);
         }
       })
       .catch((err) => {
@@ -49,7 +49,16 @@ const UserLogin = () => {
       {logOutFlag && (
         <div className={styles.LogoutMenu}>
           <a onClick={handleRemoveToken}>
-            <span>Logout</span>
+            <div className={styles.LogOutItems}>
+              <span>
+                {" "}
+                <span id={styles.Circle}>
+                <FiLogOut  id={styles.LogOutIcon} />
+                </span>
+              </span>
+            <span id={styles.LogOut}>Logout</span>
+            
+            </div>
           </a>
         </div>
       )}

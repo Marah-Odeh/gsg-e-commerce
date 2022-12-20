@@ -5,6 +5,8 @@
   display: flex;
   align-items: center;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .AddBarContainer p {
@@ -16,18 +18,7 @@
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0px;
-  text-align: left;
-  right: calc(100% * (529 / 1440));
+ 
 }
 
-/* Mobile */
 
-@media (max-width: 767px) {
-  .AddBarContainer {
-    width: 100%;
-  }
-  .AddBarContainer p {
-    text-align: left;
-    padding-left: 36%;
-  }
-}

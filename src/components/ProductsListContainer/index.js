@@ -6,8 +6,8 @@ import SortBar from "../SortBar";
 import Loading from "./LoadingButton";
 import ProductBanner from "../ProductBanner";
 import { useProductsData } from "../../context/ProductsDataContext";
-const ItemsNumberOnStart=12;
-const ItemsNumberOnAddition=9;
+const ItemsNumberOnStart = 12;
+const ItemsNumberOnAddition = 9;
 const ProductsListContainer = () => {
   const [ProductList, setProductList] = useState([]);
   const [itemsNumber, setItemsNumber] = useState(ItemsNumberOnStart);
@@ -18,11 +18,9 @@ const ProductsListContainer = () => {
   const { products } = useProductsData();
 
   useEffect(() => {
-    setAllProducts(products);
-    const slice = [...products]
-      .sort((a, b) => a.title.localeCompare(b.title))
-      .slice(0, ItemsNumberOnStart);
-    setProductList(slice);
+    const Array = [...products].sort((a, b) => a.title.localeCompare(b.title));
+    setAllProducts(Array);
+    setProductList(Array.slice(0, ItemsNumberOnStart));
   }, [products]);
 
   const categories = products.map((x) => x.category);
@@ -74,6 +72,19 @@ const ProductsListContainer = () => {
       setFullFlag(true);
     }
   };
+
+  const reset = () => {
+    let Array;
+    if (targetValue === "price") {
+      Array = [...products].sort((a, b) => a.price - b.price);
+    } else if (targetValue === "title") {
+      Array = [...products].sort((a, b) => a.title.localeCompare(b.title));
+    }
+    setAllProducts(Array);
+    let slice = Array.slice(0, ItemsNumberOnStart);
+    setProductList(slice);
+  };
+
   useEffect(() => {
     ProductList.length === AllProducts.length
       ? setFullFlag(true)
@@ -88,6 +99,8 @@ const ProductsListContainer = () => {
         <Filters
           categories={categories}
           filterValueSelected={OnFilterValueSelected}
+          reset={reset}
+          setFilteredValue={setFilteredValue}
         />
         <ProductsContainer products={ProductList} />
       </div>

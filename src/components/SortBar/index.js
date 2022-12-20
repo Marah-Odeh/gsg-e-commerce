@@ -18,7 +18,9 @@ const SortBar = ({ OnSortSelected, filteredValue }) => {
   };
   return (
     <div className={styles.SortBar}>
-      <div className={styles.CategoryTitle}>Category <IoIosArrowForward/> {filteredValue}</div>
+      <div className={styles.CategoryTitle}>
+        Category <IoIosArrowForward /> {filteredValue}
+      </div>
 
       <div className={styles.SortedContainer}>
         <p className={styles.SortByTitle}>Sort by</p>

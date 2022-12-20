@@ -9,7 +9,7 @@
     position: absolute;
     left: 10%;
     top: 40%;
-    width: 25px;
+    width: 20px;
     color: black;
     cursor: pointer;
   }
@@ -45,9 +45,13 @@
     text-align: left;
     line-height: 40px;
     text-transform: uppercase;
-    margin-left:10px;
+    padding-left:10px;
     text-decoration: none;
 
+  }
+
+  .MenuItem:hover {
+background-color: lightgray;
   }
 
 }

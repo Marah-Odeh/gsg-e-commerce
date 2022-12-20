@@ -1,6 +1,5 @@
 .Filters {
   width: calc(100% * (300 / 1440));
-  height: 815px;
   margin-right:calc(100% * (30 / 1440));
 }
 .FiltersHeader {
@@ -32,6 +31,7 @@
   text-align: left;
   line-height: 40px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .Categories {
   box-shadow: 0px -2px 0px rgba(243, 243, 243, 1);
@@ -58,4 +58,10 @@
   letter-spacing: 0px;
   text-align: left;
   line-height: 40px;
+}
+
+@media (max-width: 767px){
+  .Filters {
+    width: 100%;
+  }
 }

@@ -10,6 +10,9 @@
   background-color: black;
   opacity: 40%;
 }
+#Left:hover ,#Right:hover{
+  transform: scale(1.05);
+}
 
 #Right {
   width: 50px;

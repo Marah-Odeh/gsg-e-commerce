@@ -9,6 +9,7 @@ const Slider = () => {
     width: "100%",
     height: "600px",
     backgroundSize: "cover",
+    backgroundPosition: "center",
     backgroundImage: `url(${slides[currentIndex].url})`,
   };
   const goToPrevious = (event) => {

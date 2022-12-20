@@ -66,12 +66,12 @@
 }
 
 @media (max-width: 767px) {
-  /* .CategoryTitle {
-    left:5%;
-  } */
+  .CategoryTitle {
+   display: none;
+  } 
   .SortedContainer{
     right:5%;
-    width:40%;
+    width:70%;
 
   }
   .SortByTitle{
