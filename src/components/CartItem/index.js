@@ -18,11 +18,12 @@ const CartItem = ({ id, quantity }) => {
             <span className={styles.CartItemNumber}>x{quantity}</span>
           )}
         </div>
-        <div>${item.price}</div>
+        <div className={styles.Price}>${item.price}</div>
       </div>
-      <div>${item.price * quantity}</div>
+      <div className={styles.Price}>${item.price * quantity}</div>
       <div className={styles.RemoveItem}>
         {" "}
+        
         <button
           className={styles.RemoveBtn}
           onClick={() => {

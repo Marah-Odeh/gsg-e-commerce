@@ -1,21 +1,19 @@
-.DrawerHeader{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-    justify-content: space-between;
-    box-shadow: 0px 5px 20px rgb(0 0 0 / 3%);
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 1);
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: 500;
-    font-size: 20;
-
+.DrawerHeader {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+  box-shadow: 0px 5px 20px rgb(0 0 0 / 3%);
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 1);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+  font-size: 20;
 }
-.DrawerBody{
-    width:100%; 
-    display: flex;
-    flex-direction: column;
+.DrawerBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-

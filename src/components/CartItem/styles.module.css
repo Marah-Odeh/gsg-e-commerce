@@ -23,17 +23,45 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.CartItemTitle {
+.Price {
+  opacity: 1;
+  color: rgba(51, 51, 58, 1);
+  font-family: "proxima-nova", sans-serif;
+  font-size: 15px;
   font-weight: 500;
-  color:rgb(248, 129, 66);}
-
-.RemoveItem{
-   align-items: center;
-   justify-content: end;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 30px;
 }
-.RemoveBtn{
-    width:25px;
-    height: 25px;
-    background-color: white;
-    border-color: rgb(236, 84, 84);
+.CartItemTitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: rgb(248, 129, 66);
+  font-size: 15px;
+}
+
+.CartItemNumber {
+  color: rgba(51, 51, 58, 1);
+  font-family: "proxima-nova", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-style: italic;
+}
+.RemoveItem {
+  align-items: center;
+  justify-content: end;
+}
+.RemoveBtn {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-color: rgb(236, 84, 84);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.RemoveBtn:hover {
+  background-color: rgb(236, 84, 84);
+  color: white;
 }

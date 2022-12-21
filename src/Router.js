@@ -11,28 +11,31 @@ import ProductsDataProvider from "./context/ProductsDataContext";
 import JournalPage from "./views/JournalPage";
 import AboutPage from "./views/AboutPage";
 import FabricPage from "./views/FabricPage";
+import WishListContext from "./context/WishListContext";
 const Router = () => {
   return (
     <ProductsDataProvider>
       <ShoppingCartProvider>
-        <BrowserRouter>
-          <Routes>
-            <Route path={"/login"} element={<Login />} />
-            <Route element={<Layout />}>
-              <Route index element={<HomePage />} />
-              <Route path="/products" element={<ProductsList />} />
-              <Route
-                path={"/productDetails/:productId"}
-                element={<ProductDetails />}
-              />
-              <Route path="/fabric" element={<FabricPage/>} />
+        <WishListContext>
+          <BrowserRouter>
+            <Routes>
+              <Route path={"/login"} element={<Login />} />
+              <Route element={<Layout />}>
+                <Route index element={<HomePage />} />
+                <Route path="/products" element={<ProductsList />} />
+                <Route
+                  path={"/productDetails/:productId"}
+                  element={<ProductDetails />}
+                />
+                <Route path="/fabric" element={<FabricPage />} />
 
-              <Route path="/journal" element={<JournalPage />} />
-              <Route path="/about" element={<AboutPage />} />
-            </Route>
-            <Route path="*" element={<Error404Page />} />
-          </Routes>
-        </BrowserRouter>
+                <Route path="/journal" element={<JournalPage />} />
+                <Route path="/about" element={<AboutPage />} />
+              </Route>
+              <Route path="*" element={<Error404Page />} />
+            </Routes>
+          </BrowserRouter>
+        </WishListContext>
       </ShoppingCartProvider>
     </ProductsDataProvider>
   );

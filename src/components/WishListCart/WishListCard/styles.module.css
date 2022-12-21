@@ -1,0 +1,21 @@
+.WishListCard{
+    display: flex;
+    width:100%;
+    padding-left:10px;
+    padding-right:30px;
+    justify-content: space-between;
+    margin-bottom:20px;
+}
+.CartItemImage{
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+}
+.HeartIcon{
+    width:20px;
+    height:20px;
+    color:red;
+}
+.HeartIcon:hover{
+    color:grey;
+}
