@@ -67,5 +67,16 @@ From the navbar, you can login to your account by inputting your email and passw
 𝐔𝐧𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐋𝐨𝐠𝐢𝐧:
 <img src="https://user-images.githubusercontent.com/81569702/214652492-23baf4a0-7019-425b-ab57-07c838f73ed4.PNG"  width="500"  >
 
+### Shopping (products List) Page
 
+On this page, the user can view a banner with a product image, which changes with each product filter (filter by category). At first, just 12 items will be visible; if you wish to see more products, click the "loading" button at the bottom of the products list. Using the sorting bar, the user can arrange the items according to price or title. The sidebar filtering feature also enables category filtering for products. The reset button brings back all previously filtered products.
+
+<div>
+<img src="https://user-images.githubusercontent.com/81569702/214661396-af4758dd-bfc9-420a-a0a2-4eb4934c45f4.PNG" width="600" >
+<img src="https://user-images.githubusercontent.com/81569702/214661433-b8a51979-e1fe-4462-a323-40342e0e0504.PNG" width="400" >
+
+</div>
+</br>
+𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐛𝐮𝐭𝐭𝐨𝐧:
+<img src="https://user-images.githubusercontent.com/81569702/214661532-685010ef-630d-40aa-bd99-b70720910519.PNG" >
 
