@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+## About Project
+In this project, I developmented React e-commerce website which presents a selection of products and enables customers to view the details of each one and add it to their shopping cart or favorite items list. Additionally, the user can utilize the website to categorize the products and order them by title or price.
+## Technologies
+#### For front-end development, I used React.js, including:
+React functional component, React-Hooks, React-Routing, React Cookies, Axios, Restful API, Context, and Custom Hooks.
+## Views
+### Home Page
+This page will appear to the user when they open the website. On the top of this page, you can see the navbar, and slider. The left and right arrows can be used to move the slider, and the "shop now" button can be used to navigate to the shop page.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div>
+<img src="https://user-images.githubusercontent.com/81569702/214334955-1459e016-dead-4d80-a02e-f4729606303e.PNG"  width="450"  >
+<img src="https://user-images.githubusercontent.com/81569702/214337402-b807b367-505e-486a-8926-905967d64e4f.PNG" width="450" >
+</div>
 
-## Available Scripts
 
-In the project directory, you can run:
+Trending products can be seen in the "𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐝" section.
 
-### `npm start`
+<img src="https://user-images.githubusercontent.com/81569702/214334905-af4ed9f0-98d7-4903-998c-1f5acddf3968.PNG" width="700">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+When the user hovers over the product card, the Quick View button will appear. If the button is clicked, a pop-up with product details will be shown.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="https://user-images.githubusercontent.com/81569702/214342606-9b471e17-bf77-4af4-8477-aa646d0715b4.PNG" >
 
-### `npm test`
+The pop-up displays the product title, description, and slider, which can be moved by hovering over the picture.
+<br/>
+<div>
+<img src="https://user-images.githubusercontent.com/81569702/214343542-1aa66352-e133-4c6d-8d3a-55ef839572ea.PNG"  width="500">
+<img src="https://user-images.githubusercontent.com/81569702/214347228-1ffd37e8-40c8-4844-991b-4534b803187c.PNG"  width="500">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</div>
+From the pop-up, the user can add\remove the product to shopping-cart increase/decrease the quantity. Also he can add/remove it to faviourt list. You can navigate to product details page using "View Full product Details" button. 
 
-### `npm run build`
+<img src="https://user-images.githubusercontent.com/81569702/214570181-69e8a796-9ded-4b76-aadf-a4da1f513d36.PNG"  width="500">
+The product will be shown in the shopping cart and wish list.
+<br/>
+𝐍𝐚𝐯𝐛𝐚𝐫:
+<img src="https://user-images.githubusercontent.com/81569702/214574802-1b4f9aa5-5181-4492-9de0-1bfb3f72223c.PNG" >
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br/>
+𝐒𝐡𝐨𝐩𝐩𝐢𝐧𝐠 𝐜𝐚𝐫𝐭:
+<br/>
+<img src="https://user-images.githubusercontent.com/81569702/214570828-42f1009b-542c-4fb7-ac66-710da98e6148.PNG"  width="500">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### Wish List:
+<img src="https://user-images.githubusercontent.com/81569702/214570849-e6a35790-feb5-44e1-905e-03f22a572c61.PNG"  width="500">
+<br/>
+The pictures below show the About, Explore, Shop, and Recommended Videos sections on the Home page.
+<div>
+<img src="https://user-images.githubusercontent.com/81569702/214334889-f63d11ed-cac2-404f-a0e9-19e28b0d680b.PNG"  width="450"  >
+<img src="https://user-images.githubusercontent.com/81569702/214334882-c670dd94-3975-431e-9e89-411f69bdcc8d.PNG" width="450" >
+</div>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Login Page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+From the navbar, you can login to your account by inputting your email and password. If some error has occurred, an error message will be shown. If authentication is successful, the home page will be navigated to and the user name and picture will be displayed in the navigation bar.
+<br/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐋𝐨𝐠𝐢𝐧:
+<div>
+<img src="https://user-images.githubusercontent.com/81569702/214651022-3407b0eb-7fbb-4027-96a8-062940a57675.PNG"  width="500"  >
+<img src="https://user-images.githubusercontent.com/81569702/214651296-8a7920d1-c2bd-4063-978c-f32b184f6cfd.PNG" width="400" >
+</div>
+𝐋𝐨𝐠𝐨𝐮𝐭:
+<img src="https://user-images.githubusercontent.com/81569702/214652486-1a075ee0-a0b4-4043-a6ff-cf796f06f4ba.PNG"  >
+𝐔𝐧𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐋𝐨𝐠𝐢𝐧:
+<img src="https://user-images.githubusercontent.com/81569702/214652492-23baf4a0-7019-425b-ab57-07c838f73ed4.PNG"  width="500"  >
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
