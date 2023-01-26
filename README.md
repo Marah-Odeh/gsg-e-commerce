@@ -1,5 +1,5 @@
 ## About Project
-In this project, I developmented React e-commerce website which presents a selection of products and enables customers to view the details of each one and add it to their shopping cart or favorite items list. Additionally, the user can utilize the website to categorize the products and order them by title or price.
+In this project, I built a React e-commerce website which presents a selection of products and enables customers to view the details of each one and add it to their shopping cart or favorite items list. Additionally, the user can utilize the website to categorize the products and order them by title or price.
 ## Technologies
 #### For front-end development, I used React.js, including:
 React functional component, React-Hooks, React-Routing, React Cookies, Axios, Restful API, Context, and Custom Hooks.
@@ -79,4 +79,25 @@ On this page, the user can view a banner with a product image, which changes wit
 </br>
 𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐛𝐮𝐭𝐭𝐨𝐧:
 <img src="https://user-images.githubusercontent.com/81569702/214661532-685010ef-630d-40aa-bd99-b70720910519.PNG" >
+
+### Product Details Page:
+Every product has its own product details page, which can be accessed by clicking the "View Full Product Details" button in the modal pop-up.
+The product details section is located at the top of the page and allows you to view the product's details as well as add or remove items from your shopping cart or wishlist. Other sections on the page include customer reviews of products and a collection of products that you might be interested in. 
+
+<div>
+<img src="https://user-images.githubusercontent.com/81569702/214822793-42871521-85f2-44d8-a8b5-4c01d7d14355.PNG" width="500" >
+<img src="https://user-images.githubusercontent.com/81569702/214822799-038e3c47-7ba5-4355-bdea-a4ebe018d266.PNG"  width="500"  >
+<img src="https://user-images.githubusercontent.com/81569702/214822806-6cc027ed-d7e0-4f51-836f-5f5f24d769c6.PNG"  width="500" >
+<img src="https://user-images.githubusercontent.com/81569702/214822784-b21c3c3d-c871-4835-adad-24ade7815ecb.PNG"  width="500" >
+
+</div>
+
+### Fabric Page:
+<img src="https://user-images.githubusercontent.com/81569702/214823618-145de610-859e-4803-a170-ce1f26df763e.PNG" >
+
+### 404 Error Page:
+<img src="https://user-images.githubusercontent.com/81569702/214824005-e6a916aa-9f06-4bc1-8616-d02502b63222.PNG" >
+
+
+
 
