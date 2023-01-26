@@ -3,6 +3,14 @@ In this project, I built a React e-commerce website which presents a selection o
 ## Technologies
 #### For front-end development, I used React.js, including:
 React functional component, React-Hooks, React-Routing, React Cookies, Axios, Restful API, Context, and Custom Hooks.
+## Features
+ * React Axios was used to fetch product data from an API.
+ * Contexts were used to store product data, shopping cart data, and wish list (favorite) data.
+ * There is a category-based filtering feature (smartphones, Laptops, Fragrances,... etc).
+ * Cookies will contain the user token after log-in authentication, allowing the user to logon to the website. The token will be removed from the cookie when the user logs out.
+ * Any product can be added or removed from the cart, as well as the quantity added. Also, the user has the ability to add and remove products from their favorite list.
+ * dynamic routing and page navigation.
+ 
 ## Views
 ### Home Page
 This page will appear to the user when they open the website. On the top of this page, you can see the navbar, and slider. The left and right arrows can be used to move the slider, and the "shop now" button can be used to navigate to the shop page.
